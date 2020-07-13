@@ -1,0 +1,45 @@
+.apropo__chat{
+    width: 100%;
+    min-height: 40rem;
+    margin-top: 3rem;
+    padding: 3rem 2rem;
+    background-color: rgba(211, 211, 211, 0.146);
+
+    h3{
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+        color:#670362 ;
+    }
+
+    P{
+        font-size: 2rem;
+    }
+
+    .apropo__chat__description{
+        .icon__box{
+            display: flex;
+            width: 100%;
+            height: 20rem;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        
+
+    }
+
+    .aprop__cicle{
+        width: 20rem;
+        height: 20rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    .cicle__image{
+        height: 5rem;
+        width:5rem;
+    }
+
+   }
+}
