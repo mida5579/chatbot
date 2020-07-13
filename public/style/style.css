@@ -22,7 +22,6 @@ body {
 }
 
 .navbar__container .mynav {
-  width: 70%;
   height: 100%;
   margin: 0 auto;
   height: 100%;
@@ -72,6 +71,8 @@ body {
 .section__publ {
   width: 100%;
   min-height: 20rem;
+  padding-left: 1.5rem;
+  padding-left: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
