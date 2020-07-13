@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.interface__chat p {
+  font-size: 1.3rem;
+}
+
+.interface__chat span {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.interface__chat .ets__name {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.interface__chat textarea {
+  font-size: 1.5rem;
+}
+
+.interface__chat {
+  height: 50rem;
+  width: 18%;
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+  border-radius: 1rem;
+  -webkit-box-shadow: 10px -18px 113px -69px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px -18px 113px -69px rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+}
+
+.interface__chat__head {
+  height: 8rem;
+  background-color: #670362;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  -webkit-box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.interface__chat__head .ets__infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.interface__chat__head .ets__infos .ets__logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.interface__chat__head .ets__infos .ets__logo img {
+  height: 5rem;
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.interface__chat__head .icon__fermer {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.interface__chat__head .icon__fermer img {
+  height: 2rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.interface__chat__body {
+  height: 73%;
+  padding: 2rem 1rem 0;
+  overflow-x: hidden;
+}
+
+.interface__chat__body .message__admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.interface__chat__body .message__admin__icon {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 1px solid #670362;
+  margin-right: .3rem;
+}
+
+.interface__chat__body .message__admin__icon img {
+  height: 3rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.interface__chat__body .message__admin__contenu {
+  width: 96%;
+  margin-top: 1rem;
+}
+
+.interface__chat__body .message__admin__contenu p {
+  background-color: #f3f8fa;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: .5rem;
+}
+
+.interface__chat__body .message__client {
+  width: 80%;
+  margin-bottom: 2rem;
+  float: right;
+}
+
+.interface__chat__body .message__client__contenu p {
+  background-color: #670362;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  margin-bottom: .5rem;
+}
+
+.interface__chat__foot {
+  -webkit-box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.interface__chat__foot .form__chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.interface__chat__foot .form__chat textarea {
+  height: 5.3rem;
+  width: 75%;
+  padding: 1rem;
+  border: none;
+}
+
+.interface__chat__foot .form__chat .parent-div {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.interface__chat__foot .form__chat .parent-div input {
+  cursor: pointer;
+}
+
+.interface__chat__foot .form__chat .parent-div input[type=file] {
+  left: 0;
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  font-size: 90px;
+}
+
+.interface__chat__foot .form__chat button {
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.interface__chat__foot .form__chat button input {
+  width: 5rem;
+  width: 0.1rem;
+  overflow: hidden;
+}
+
+.interface__chat__foot .form__chat button img {
+  width: 100%;
+  height: 3rem;
+}
+
+.chatBlocView {
+  visibility: visible;
+  bottom: 15%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.page__content {
+  margin-left: 7rem;
+  width: calc(100% - 7rem);
+  height: 100vh;
+  padding: 2rem;
+}
+
+.graphic {
+  height: 50vh;
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  padding: 2rem 1rem;
+}
+
+.dropmenu {
+  min-height: 5rem;
+  width: 10rem;
+  border: 1px solid #ccc;
+}
+
+.btn__button__chat {
+  position: fixed;
+  right: 1%;
+  bottom: 0;
+  -webkit-transform: translate(-97%, -98%);
+          transform: translate(-97%, -98%);
+  height: 7rem;
+  width: 7rem;
+  background-color: #670362;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn__button__chat img {
+  height: 4rem;
+  width: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.btn__button__chat .fermer {
+  display: none;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 7rem;
+  background-color: #670362;
+  position: fixed;
+  padding: 2rem 0;
+}
+
+.sidebar .sidebar__menu__item {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.sidebar .sidebar__menu__item:hover {
+  background-color: rgba(255, 255, 255, 0.123);
+  border-right: 3px solid white;
+}
+
+.sidebar .sidebar__menu__item__active {
+  background-color: rgba(255, 255, 255, 0.123);
+  border-right: 3px solid white;
+}
+
+.sidebar__icon {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 auto;
+}
+
+.sidebar__icon img {
+  height: 4rem;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=style.css.map */

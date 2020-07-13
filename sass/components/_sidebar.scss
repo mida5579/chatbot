@@ -1,0 +1,38 @@
+.sidebar{
+    height: 100vh;
+    width: 7rem;
+    background-color: $color-blue;
+    position: fixed;
+    padding: 2rem 0;
+
+    .sidebar__menu{
+
+        &__item{
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            transition: ease-in-out .3s;
+
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.123);
+                border-right: 3px solid $color-white;
+            }
+
+            &__active{
+                background-color: rgba(255, 255, 255, 0.123);
+                border-right: 3px solid $color-white;
+            }
+        }
+    }
+
+    &__icon{
+        height: 4rem;
+        width: 4rem;
+        margin: 0 auto;
+
+        img{
+            height: 4rem;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

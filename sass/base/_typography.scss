@@ -1,0 +1,25 @@
+
+
+// chat bot interface
+.interface__chat{
+
+    p{
+        font-size: 1.3rem;
+    }
+
+    span{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    // Chat Head title
+    .ets__name{
+        font-size: 2rem;
+        color: $color-white;
+        font-weight: bold;
+    }
+
+    textarea{
+        font-size: 1.5rem;
+    }
+}
+

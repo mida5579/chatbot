@@ -1,7 +1,15 @@
-@import'abstracts/variable';
-@import'bases/bases';
+// abstracts
+@import 'abstracts/variables'; 
 
-@import'layout/navbar';
-@import'layout/section_publ';
-@import'layout/section_intro';
-@import'layout/apropo';
+// Base
+@import 'base/reset';
+@import 'base/_typography.scss';
+
+// Layouts
+@import 'layouts/interfaceChat';
+@import 'layouts/pageContent';
+@import 'layouts/home';
+
+// components
+@import 'components/buttons';
+@import 'components/sidebar';
