@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- My styles-->
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar__menu">
+            <li class="sidebar__menu__item">
+                <a data-toggle="tab" href="#menu1" class="sidebar__menu__link">
+                    <div class="sidebar__icon">
+                        <i class="fa fa-comments"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sidebar end -->
+    <!--page content-->
+    <div class="page__content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 padding">
+                    <div class="chat_box">
+                        <nav class="my_tab">
+                            <button class="tablinks" onclick="openCity(event, 'chat')">Mes tchats</button>
+                            <button class="tablinks" onclick="openCity(event, 'tout')"> Tous les tchats</button>
+                            <button class="tablinks" onclick="openCity(event, 'search')"><i class="fa fa-search"></i> </button>
+                        </nav>
+
+                        <div id="chat" class="tabcontent">
+                            <div class="tabcontent_box">
+                              <span class="vbox">V</span>
+                              <p>Visiteurs</p>
+                            </div>
+                        </div>
+
+                        <div id="tout" class="tabcontent">
+                            <div class="tabcontent_box">
+                                <span class="vbox">V</span>
+                                <div class="text_date">
+                                    <h3>Tous les Visiteur</h3> 
+                                    <span>un</span>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="search" class="tabcontent">
+                            <div class="tabcontent_box">
+                                <input type="search" class="tabcontent_box__search" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="visiteur_box">zqesdrftgyhuijkol</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <script src="../js/chat.js"></script>
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
