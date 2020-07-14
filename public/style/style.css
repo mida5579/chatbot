@@ -134,6 +134,12 @@ a, a:hover {
      object-fit: contain;
 }
 
+@media only screen and (max-width: 453px) {
+  .section__cards__description {
+    margin-bottom: 2rem;
+  }
+}
+
 .section__cards__illustration {
   min-height: 40rem;
   width: 100%;
@@ -141,7 +147,7 @@ a, a:hover {
 
 .section__cards__illustration__item {
   width: 100%;
-  height: 20rem;
+  min-height: 20rem;
   padding: 2rem;
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -158,6 +164,15 @@ a, a:hover {
 
 .section__cards__illustration__item i {
   color: #670362;
+}
+
+@media only screen and (max-width: 377px) {
+  .section__cards__illustration__item p {
+    font-size: 1.3rem;
+  }
+  .section__cards__illustration__item i {
+    margin-top: 1rem;
+  }
 }
 
 .inline-icon {
@@ -191,6 +206,101 @@ a, a:hover {
 
 .inline-icon .icon a:hover {
   color: white;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal__insrip {
+  height: 50rem;
+  width: 100%;
+}
+
+.modal__insrip .modal__title, .modal__insrip .modal__title-connex {
+  font-size: 2rem;
+  color: #ed5830;
+  font-weight: bold;
+}
+
+.modal__title-connex {
+  font-size: 2rem;
+  color: #ed5830;
+  font-weight: bold;
+}
+
+.form_class {
+  width: 100%;
+  height: 40rem;
+}
+
+.form_class .input__box {
+  width: 100%;
+  height: 5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form_class .input__box input {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  border: none;
+}
+
+.form_class .input__box input:focus {
+  outline: none;
+}
+
+/***/
+.form_class2 {
+  width: 100%;
+  height: 20rem;
+  text-align: center;
+}
+
+.form_class2 .input__box {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form_class2 .input__box input {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid  #67036210;
+}
+
+.form_class2 .input__box input:focus {
+  outline: none;
+}
+
+.input_button {
+  width: 15rem;
+  height: 5rem;
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  color: #670362;
+  border: none;
+  border-radius: 1rem;
+  border: 1px solid #670362;
+  background-color: #fff;
+  margin-top: 2rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.input_button:focus {
+  outline: outset;
+}
+
+.input_button:hover {
+  background-color: #670362;
+  color: #fff;
 }
 
 .navbar__container {
@@ -306,13 +416,13 @@ a, a:hover {
 }
 
 .section__intro .description__card span {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: #ed5830;
 }
 
 .section__intro .description__card h2 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 4rem;
 }
 
 .section__intro .description__card P {
@@ -337,6 +447,16 @@ a, a:hover {
 .section__intro .illustration__card {
   width: 100%;
   height: 40rem;
+}
+
+@media only screen and (max-width: 453px) {
+  .section__intro .illustration__card .img {
+    margin-top: 6rem;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .apropo__chat {

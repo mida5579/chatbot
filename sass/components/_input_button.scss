@@ -1,0 +1,25 @@
+.input_button{
+    width: 15rem;
+    height: 5rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    color:  #670362;
+    border: none;
+    border-radius: 1rem;
+    border: 1px solid #670362;
+    background-color: #fff;
+    margin-top: 2rem;
+    transition: all .3s ease-in-out;
+}
+
+.input_button:focus{
+    outline: outset;
+
+}
+.input_button:hover{
+   background-color:#670362; 
+   color:#fff;
+
+}
+
+

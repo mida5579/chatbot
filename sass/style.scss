@@ -1,3 +1,4 @@
+@import'abstracts/mixin';
 @import'abstracts/variable';
 
 @import'bases/bases';
@@ -5,6 +6,8 @@
 
 @import'components/section__cards-descr';
 @import'components/icone';
+@import'components/modalform';
+@import'components/input_button';
 
 
 @import'layout/navbar';

@@ -33,12 +33,69 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Se connecter</a>
+                  <a class="nav-link" href="#" class ="modal-dialog "  data-toggle="modal" data-target="#staticBackdrop">S'inscrire</a>
+       <!--modal inscription-->
+                  <div class="modal fade modal__insrip text-center" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <!--inscription form-->
+                            <h5 class=" modal__title" id="staticBackdropLabel">S'INSCRIRE</h5>
+                            <form action="" class="form_class">
+                                <div class="input__box">
+                                    <input type="text" name="busness-name" placeholder="Enter your busness-name">
+                                </div>
+
+                                <div class="input__box">
+                                    <input type="text" name="name" placeholder="Enter your name">
+                                </div>
+                                <div class="input__box">
+                                    <input type="text" name="email" placeholder="Enter your email ">
+                                </div>
+                                <div class="input__box">
+                                    <input type="password" name="password" placeholder="Enter your password">
+                                </div>
+                                <div class="input__box">
+                                    <input type="text" name="busness-name" placeholder="Enter your busness-name">
+                                </div>
+                             
+                               
+                                    <button type="submit" class="input_button" data-dismiss="modal">submit</button>
+                                
+                            </form>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    <!--modal inscription end-->
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">S'inscrire</a>
+    <!--modal inscription-connexion-->
+                  <a class="nav-link" href="#"data-toggle="modal" data-toggle="modal" data-target="#exampleModal">Se connecter</a>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <!--inscription form-->
+                            <h5 class="  text-center modal__title-connex" id="staticBackdropLabel">SE CONNECTER</h5>
+                            <form action="" class="form_class2">
+                                <div class="input__box">
+                                    <input type="text" name="email" placeholder="Enter your email ">
+                                </div>
+                                <div class="input__box">
+                                    <input type="password" name="password" placeholder="Enter your password">
+                                </div>
+                                    <button type="submit" class="input_button text-center" data-dismiss="modal">submit</button>
+                                
+                            </form>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -52,20 +109,20 @@
             <div class="row">
                 <div class=" col-sm-12 col-md-6 col-lg-6">
                     <div class="description__card">
-                        <span>Tout ce dont vous avez besoin pour le</span>
-                        <h2>support client</h2>
+                        <h2>Tout ce dont vous avez besoin pour le</h2>
+                        <span>support client</span>
                         <p>
                             Pile technologique complète pour
                             numériser votre entreprise de bout en bout
                             Pile technologique complète pour
                             numériser votre entreprise de bout en bout
                         </p>
-                        <a href=""><button class="mybutton">s'inscrire</button> </a>
+                        <a href=""><button class="input_button">s'inscrire</button> </a>
                     </div>
                 </div>
                 <div class=" col-sm-12 col-md-6 col-lg-6">
                     <div class="illustration__card">
-                        <img src="images/coronaHB.svg" alt="imagecorona" class="img-fluid">
+                        <img src="images/coronaHB.svg" alt="imagecorona" class="img-fluid img">
                     </div>
                 </div>
             </div>
@@ -91,13 +148,13 @@
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="agenda">
-                        <span class="agenda__icon" style="font-size: 3rem; font-weight:bolder;"> 24/24</span>
+                        <span class="agenda__icon" style="font-size: 3rem; font-weight:bolder;color: #ed5830;"> 24/24</span>
                         <p>Aidez un nombre illimité de clients en temps réel.</p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="agenda">
-                        <span  class="agenda__icon" style="font-size: 3rem; font-weight:bolder;"> 100%</span>
+                        <span  class="agenda__icon" style="font-size: 3rem; font-weight:bolder;color: #ed5830;"> 100%</span>
                         <p>Aidez un nombre illimité de clients en temps réel.</p>
                     </div>
                 </div>
@@ -169,46 +226,49 @@
 
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="section__cards__illustration">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="section__cards__illustration__item">
-                                    <div class="item-1"><i class="fa fa-envelope-open fa-4x"></i></div>
-                                    <div class="item-2">
-                                        <h3>Messagerie déclenchée</h3>
-                                        <p>Engagez les visiteurs avec un chat en ligne pour leur envoyer le bon message pour booster votre entreprise.</p>
-                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="section__cards__illustration__item">
-                                    <div class="item-1"> <i class="fa fa-etsy fa-4x" aria-hidden="true"></i></</div>
-                                    <div class="item-2">
-                                        <h3>Messagerie déclenchée</h3>
-                                        <p>Engagez les visiteurs avec un chat en ligne pour leur envoyer le bon message pour booster votre entreprise.</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="section__cards__illustration__item">
+                                        <div class="item-1"><i class="fa fa-envelope-open fa-4x"></i></div>
+                                        <div class="item-2">
+                                            <h3>Messagerie déclenchée</h3>
+                                            <p>Engagez les visiteurs avec un chat en ligne pour leur envoyer le bon message pour booster votre entreprise.</p>
+                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                           
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="section__cards__illustration__item">
-                                    <div class="item-1"><i class="fa  fa-commenting fa-4x" aria-hidden="true"></i></div>
-                                    <div class="item-2">
-                                        <h3>Messagerie déclenchée</h3>
-                                        <p>Engagez les visiteurs avec un chat en ligne pour leur envoyer le bon message pour booster votre entreprise.</p>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="section__cards__illustration__item">
+                                        <div class="item-1"> <i class="fa fa-etsy fa-4x" aria-hidden="true"></i></</div>
+                                        <div class="item-2">
+                                            <h3>Messagerie déclenchée</h3>
+                                            <p>Engagez les visiteurs avec un chat en ligne pour leur envoyer le bon message pour booster votre entreprise.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="section__cards__illustration__item">
-                                    <div class="item-1"><i class="fa fa-user fa-4x" aria-hidden="true"></i></div>
-                                    <div class="item-2">
-                                        <h3>Messagerie déclenchée</h3>
-                                        <p>Engagez les visiteurs avec un chat en ligne pour leur envoyer le bon message pour booster votre entreprise.</p>
+                               
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="section__cards__illustration__item">
+                                        <div class="item-1"><i class="fa  fa-commenting fa-4x" aria-hidden="true"></i></div>
+                                        <div class="item-2">
+                                            <h3>Messagerie déclenchée</h3>
+                                            <p>Engagez les visiteurs avec un chat en ligne pour leur envoyer le bon message pour booster votre entreprise.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div> 
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="section__cards__illustration__item">
+                                        <div class="item-1"><i class="fa fa-user fa-4x" aria-hidden="true"></i></div>
+                                        <div class="item-2">
+                                            <h3>Messagerie déclenchée</h3>
+                                            <p>Engagez les visiteurs avec un chat en ligne pour leur envoyer le bon message pour booster votre entreprise.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -226,7 +286,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="section__cards__illustration">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                 <div class="section__cards__illustration__item">
                                     <div class="item-1"><i class="fa fa-envelope-open fa-4x"></i></div>
                                     <div class="item-2">
@@ -235,7 +295,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                 <div class="section__cards__illustration__item">
                                     <div class="item-1"> <i class="fa fa-etsy fa-4x" aria-hidden="true"></i></</div>
                                     <div class="item-2">
@@ -246,7 +306,7 @@
                             </div>
                         
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                 <div class="section__cards__illustration__item">
                                     <div class="item-1"><i class="fa  fa-commenting fa-4x" aria-hidden="true"></i></div>
                                     <div class="item-2">
@@ -255,7 +315,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                 <div class="section__cards__illustration__item">
                                     <div class="item-1"><i class="fa fa-user fa-4x" aria-hidden="true"></i></div>
                                     <div class="item-2">
