@@ -1,4 +1,5 @@
 // abstracts
+@import 'abstracts/mixin';
 @import 'abstracts/variables'; 
 
 // Base
@@ -8,8 +9,11 @@
 // Layouts
 @import 'layouts/interfaceChat';
 @import 'layouts/pageContent';
-@import 'layouts/home';
+@import 'layouts/graphic';
+@import 'layouts/historique';
 
 // components
 @import 'components/buttons';
 @import 'components/sidebar';
+@import 'components/cards';
+@import 'components/allConversation';

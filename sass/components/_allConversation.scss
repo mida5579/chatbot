@@ -1,0 +1,95 @@
+.all__conversation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 60rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 2222;
+    display: none;
+
+    @include responsive(tab-port){
+        width: 40rem;
+    }
+
+    @include responsive(tab-portS){
+        width: 25rem;
+        left: 70%;
+    }
+
+    &__content{
+        padding: 2rem;
+        background-color: aliceblue;
+        height: 93%;
+        overflow-x: hidden;
+
+        &__discuss{
+            border-bottom: 1px dotted #ccc;
+            padding: 1rem 0;
+
+            &__head{
+                display: flex;
+                align-items: center;
+
+                &__icon{
+                    height: 3rem;
+                    width: 3rem;
+                    border: 1px solid #ccc;
+                    border-radius: 1rem;
+                    margin-right: 1rem;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &__idClient{
+                    font-size: 1.3rem;
+                    color: $color-blue;
+                }
+
+                &__idAdmin{
+                    font-size: 1.3rem;
+                    text-transform: capitalize;
+                }
+            }
+
+            &__message{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 1rem;
+
+                p{
+                    width: 70%;
+                    font-size: 1.3rem;
+
+                    @include responsive(tab-portS){
+                        font-size: 1.2rem;
+                    }
+                }
+
+                span{
+                    font-size: 1.3rem;
+                    font-weight: 300%;
+                }
+            }
+        }
+    }
+    &__close{
+        width: 100%;
+        border-top: 1px solid #ccc;
+        bottom: 0;
+        position: absolute;
+        bottom: 0;
+        padding: 1rem 2rem;
+    }
+}
+
+.conversationView{
+    display: block;
+}

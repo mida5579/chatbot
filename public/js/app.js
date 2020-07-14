@@ -1,4 +1,4 @@
-// Fiare afficher le bloc au clic 
+// Fiare afficher le blocdu chatbot au clic 
 var btn = document.getElementById("btn");
 var chatBloc = document.getElementById("chatBloc");
 var btnFermer = document.getElementById("btnFermer");
