@@ -39,4 +39,8 @@
         &:hover{
             background-color: rgba($color-red, .8);
         }
+
+        &:focus{
+            outline: none;
+        }
     }

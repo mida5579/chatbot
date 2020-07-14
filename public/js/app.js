@@ -10,14 +10,3 @@ btn.addEventListener('click', function () {
 btnFermer.addEventListener('click', function(){
     chatBloc.classList.remove("chatBlocView");
 });
-
-
-
-// Faire Afficher l'historique de la conversation au clic 
-var converstaion = document.getElementById("conversation");
-var allConversation = document.getElementById("allConversation");
-var conversationClose = document.getElementById("conversationClose");
-
-converstaion.addEventListener('click', function(){
-    allConversation.classList.add('conversationView');
-});

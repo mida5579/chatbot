@@ -4,7 +4,7 @@
     border-radius: 1rem;
     background-color: $color-white;
     padding: 2rem;
-    overflow-x: hidden;
+    overflow: scroll;
 
     &__head{
         display: flex;
@@ -28,11 +28,12 @@
     &__table{
         width: 100%;
         margin-top: 5rem;
+        
 
         tr{
             height: 5rem;
             padding: 0 1rem;
-            transition: all .3s ease-in-out;
+            transition: all .3s;
         }
 
         thead{

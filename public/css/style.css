@@ -13,11 +13,11 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .admin {
   background-color: #dbdbe0;
+  height: 100vh;
 }
 
 .interface__chat p {
@@ -308,24 +308,29 @@ html {
 .page__content {
   margin-left: 7rem;
   width: calc(100% - 7rem);
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem;
 }
 
 .graphic {
-  height: 50vh;
+  min-height: 50vh;
   width: 100%;
   -webkit-box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
           box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
   padding: 2rem 1rem;
   background-color: white;
   border-radius: 1rem;
+  overflow: scroll;
 }
 
-.dropmenu {
-  min-height: 5rem;
-  width: 10rem;
-  border: 1px solid #ccc;
+.graphic canvas {
+  height: 50vh !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .graphic canvas {
+    width: 130rem !important;
+  }
 }
 
 .historique {
@@ -335,7 +340,7 @@ html {
   border-radius: 1rem;
   background-color: white;
   padding: 2rem;
-  overflow-x: hidden;
+  overflow: scroll;
 }
 
 .historique__head {
@@ -370,8 +375,8 @@ html {
 .historique__table tr {
   height: 5rem;
   padding: 0 1rem;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .historique__table thead {
@@ -446,6 +451,10 @@ html {
 
 .btn__conversation:hover {
   background-color: rgba(211, 7, 7, 0.8);
+}
+
+.btn__conversation:focus {
+  outline: none;
 }
 
 .sidebar {
@@ -526,16 +535,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 2rem;
 }
 
 .card__stats__info--tchat {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 1rem;
 }
 
@@ -586,12 +591,100 @@ html {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-height: 80vh;
+  height: 80vh;
   width: 60rem;
   background-color: white;
   border: 1px solid #ccc;
   z-index: 2222;
   display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .all__conversation {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .all__conversation {
+    width: 25rem;
+    left: 70%;
+  }
+}
+
+.all__conversation__content {
+  padding: 2rem;
+  background-color: aliceblue;
+  height: 93%;
+  overflow-x: hidden;
+}
+
+.all__conversation__content__discuss {
+  border-bottom: 1px dotted #ccc;
+  padding: 1rem 0;
+}
+
+.all__conversation__content__discuss__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all__conversation__content__discuss__head__icon {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.all__conversation__content__discuss__head__icon img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.all__conversation__content__discuss__head__idClient {
+  font-size: 1.3rem;
+  color: #670362;
+}
+
+.all__conversation__content__discuss__head__idAdmin {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.all__conversation__content__discuss__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.all__conversation__content__discuss__message p {
+  width: 70%;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .all__conversation__content__discuss__message p {
+    font-size: 1.2rem;
+  }
+}
+
+.all__conversation__content__discuss__message span {
+  font-size: 1.3rem;
+  font-weight: 300%;
 }
 
 .all__conversation__close {

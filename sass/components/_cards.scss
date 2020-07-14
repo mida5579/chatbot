@@ -27,11 +27,10 @@
     &__info{
         display: flex;
         align-items: center;
-        justify-content: center;
         margin-top: 2rem;
 
         &--tchat{
-            justify-content: space-between;
+            justify-content: space-around;
             margin-top: 1rem;
         }
 
