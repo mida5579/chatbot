@@ -16,14 +16,14 @@
     <div class="sidebar">
         <ul class="sidebar__menu">
             <li class="sidebar__menu__item">
-                <a data-toggle="tab" href="#home" class="sidebar__menu__link">
+                <a data-toggle="tab" href="accueilAdmin.html" class="sidebar__menu__link">
                     <div class="sidebar__icon">
                         <img src="../images/browser.png" alt="browser">
                     </div>
                 </a>
             </li>
             <li class="sidebar__menu__item sidebar__menu__item__active">
-                <a data-toggle="tab" href="#menu1" class="sidebar__menu__link">
+                <a data-toggle="tab" href="configuration.html" class="sidebar__menu__link">
                     <div class="sidebar__icon">
                         <img src="../images/browser.png" alt="browser">
                     </div>
@@ -39,8 +39,93 @@
         </ul>
     </div>
 
+    <!-- Debut Page Content -->
+    <div class="page__content">
+        <!-- Progress Menu -->
+        <div class="progressMenu">
+            <!-- progress menu steps -->
+            <div class="progressMenu__steps">
+                <div class="progressMenu__steps__item next-0" id="active">
+                    <div class="progressMenu__steps__item__icon steps-active">1</div>
+                    <span>Voir les clés de votre application</span>
+                </div>
+                <div class="progressMenu__steps__item next-1">
+                    <div class="progressMenu__steps__item__icon">2</div>
+                    <span>Lien vers le profil d'entreprise</span>
+                </div>
+                <div class="progressMenu__steps__item next-2">
+                    <div class="progressMenu__steps__item__icon">3</div>
+                    <span>Installation</span>
+                </div>
+            </div>
+            <!-- fin progress menu steps -->
+            <!-- Steps Contents -->
+            <div class="progressMenu__content">
+                <div class="progressMenu__content__steps slide">
+                    <h3>Grandissez avce nous</h3>
+                    <p>
+                        Vous vous êtes inscrit à votre compte Hippo . Bon travail! Vous pouvez visiter les paramètres de votre compte pour
+                        modifier votre nom, numéro de téléphone, photo de profil et changer votre mot de passe.
+                    </p>
+                    <h4>
+                        Voici la clé de votre compte
+                    </h4>
+                    <div class="progressMenu__content__steps__key">
+                        <div class="progressMenu__content__steps__key__info">
+                            <p>Clé secrete de l'application</p>
+                            <span>91b142768d604fcd1ff70a3305b970dc</span>
+                        </div>
+                        <span class="progressMenu__content__steps__key__copy">Copier</span>
+                    </div>
+                    <button class="btn-steps next-1">Suivant : Lien vers le profil d'entreprise</button>
+                </div>
 
+                <div class="progressMenu__content__steps">
+                    <h3>Lien Vers Le profil D'entreprise</h3>
+                    <p>
+                        Penser à votre propre page Web sans les tracas du code. Nous créerons votre propre domaine pour obtenir le chat des
+                        clients.
+                    </p>
+                    <h4>
+                        Voici la clé de votre compte
+                    </h4>
+                    <div class="progressMenu__content__steps__key">
+                        <div class="progressMenu__content__steps__key__info">
+                            <p>Clé secrete de l'application</p>
+                            <span>91b142768d604fcd1ff70a3305b970dc</span>
+                        </div>
+                        <span class="progressMenu__content__steps__key__copy">Copier</span>
+                    </div>
+                    <button class="btn-steps next-2">Suivant : Installation</button>
+                </div>
 
+                <div class="progressMenu__content__steps">
+                    <h3>Integrer NaN-Bot</h3>
+                    <p>
+                        Pour discuter avec vos visiteurs, vous devrez intégrer le widget sur votre site Web.
+                    </p>
+                    <p>
+                        Copiez la source du script et la clé secrète de l'application à partir d'ici et inserer la source dans chaque page web de votre site
+                    </p>
+                    <div class="progressMenu__content__steps__key">
+                        <div class="progressMenu__content__steps__key__info progressMenu__content__steps__key__info--script">
+                            &lt;script src="https://chat.hippochat.io/js/widget.js"&gt; &lt;/script&gt; <br>
+                            &lt;script&gt; <br>
+                                . initNaNBot ({
+                                    appSecretKey: "91b142768d604fcd1ff70a3305b970dc" ,
+                                }); <br>
+                            &lt;/script&gt;
+                        </div>
+                        <span class="progressMenu__content__steps__key__copy">Copier</span>
+                    </div>
+                    <!-- <button class="btn-steps">Suivant : Lien vers le profil d'entreprise</button> -->
+                </div>
+            </div>
+            <!-- Fin Steps Contents -->
+        </div>
+        <!-- ebd Progress Menu -->
+    </div>
+    <!-- Fin page content -->
     <!-- My scripts -->
     <link rel="stylesheet" href="../js/jquery.min.js">
     <script src="../js/bootstrap.min.js"></script>

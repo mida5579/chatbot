@@ -1,3 +1,4 @@
+// btn chatbot
 .btn__button__chat{
         position: fixed;
         right: 1%;
@@ -25,6 +26,7 @@
 
     }
 
+    // btn conversation
     .btn__conversation{
         float: right;
         padding: 1rem 2rem;
@@ -39,6 +41,31 @@
         &:hover{
             background-color: rgba($color-red, .8);
         }
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+
+    // btn steps
+    .btn-steps{
+        padding: 2rem;
+        background-color: $color-white;
+        border: 1px solid $color-blue;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        color: $color-blue;
+        font-weight: 300;
+        cursor: pointer;
+        transition: ease .3s;
+
+        &:hover{
+            background-color: $color-blue;
+            color: $color-white;
+        }
+
 
         &:focus{
             outline: none;

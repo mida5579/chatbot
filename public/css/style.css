@@ -457,6 +457,29 @@ html {
   outline: none;
 }
 
+.btn-steps {
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid #670362;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: #670362;
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.btn-steps:hover {
+  background-color: #670362;
+  color: white;
+}
+
+.btn-steps:focus {
+  outline: none;
+}
+
 .sidebar {
   height: 100vh;
   width: 7rem;
@@ -698,5 +721,127 @@ html {
 
 .conversationView {
   display: block;
+}
+
+.progressMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.progressMenu__steps {
+  height: 30rem;
+  width: 50rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+.progressMenu__steps__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.progressMenu__steps__item__icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #dbdbe0;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+.progressMenu__steps__item span {
+  font-size: 1.6rem;
+  color: #dbdbe0;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.progressMenu__steps__item span:hover {
+  color: black;
+}
+
+.progressMenu__content {
+  padding: 2rem 1rem;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.progressMenu__content__steps {
+  margin-bottom: 10rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.progressMenu__content__steps p {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.progressMenu__content__steps h3 {
+  font-size: 2rem;
+  color: #670362;
+}
+
+.progressMenu__content__steps__key {
+  background-color: white;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.progressMenu__content__steps__key__info p {
+  font-size: 1.3rem;
+}
+
+.progressMenu__content__steps__key__info span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.progressMenu__content__steps__key__info--script {
+  font-size: 1.6rem;
+}
+
+.progressMenu__content__steps__key__copy {
+  font-size: 1.3rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.progressMenu__content__steps__key__copy:hover {
+  color: #670362;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.progressMenu .steps-active {
+  background-color: #670362 !important;
 }
 /*# sourceMappingURL=style.css.map */
