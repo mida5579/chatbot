@@ -3,8 +3,12 @@
 }
 
 .modal__insrip{
-    height: 50rem;
+    min-height: 50rem;
     width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
    
 
     .modal__title,.modal__title-connex{
@@ -56,7 +60,7 @@
 
 .form_class2{
     width: 100%;
-    height: 20rem;
+    min-height: 20rem;
     text-align: center;
     
 
