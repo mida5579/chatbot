@@ -1,0 +1,25 @@
+.all__conversation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 80vh;
+    width: 60rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 2222;
+    display: none;
+
+    &__close{
+        width: 100%;
+        border-top: 1px solid #ccc;
+        bottom: 0;
+        position: absolute;
+        bottom: 0;
+        padding: 1rem 2rem;
+    }
+}
+
+.conversationView{
+    display: block;
+}

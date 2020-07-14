@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NaN-Bot Admin</title>
 
-    <!-- Mes styles -->
+    <!-- My styles -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="admin">
     <!-- Sidebar -->
     <div class="sidebar">
         <ul class="sidebar__menu">
@@ -39,26 +39,180 @@
 
     <!-- page content -->
     <div class="page__content">
-        <!-- Debut Statistic -->
+        <!-- Start Statistic -->
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
                 <div class="graphic">
                     <!-- graphic menu deroulant -->
-                    <div class="ml-auto dropmenu">
+                    <!-- <div class="ml-auto dropmenu">
                         <span>EN ligne</span>
+                    </div> -->
+                </div>
+                <!-- Stats Details -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <!-- Card Visiteurs -->
+                        <div class="card__stats">
+                            <div class="card__stats__head">
+                                <div class="card__stats__head__icon">
+                                    <img src="../images/team.png" alt="team">
+                                </div>
+                                <h4>Visiteurs</h4>
+                            </div>
+                            <!-- Nombre DE Visiteur  -->
+                            <div class="card__stats__info">
+                                <span>Aujourd'hui</span>
+                                <div class="card__stats__info__icon">
+                                    <img src="../images/curve-arrow.png" alt="curve">
+                                </div>
+                                <span class="card__stats__info--percent">50</span>
+                            </div>
+                            <!-- Stats Par semaines  -->
+                            <div class="card__stats__historique ">
+                                <!-- Plus Grand Nombre -->
+                                <span>Semaine Passsée</span>
+                                <div class="card__stats__historique__icon">
+                                    <img src="../images/upload.png" alt="upload">
+                                </div>
+                                <span class="card__stats__historique--percent">50</span>
+                                <!-- plus petit nombre -->
+                                <div class="card__stats__historique__icon">
+                                    <img src="../images/download.png" alt="download">
+                                </div>
+                                <span class="card__stats__historique--percent">10</span>
+                            </div>
+                        </div>
+                        <!-- end card visiteurs -->
                     </div>
-
-                    <!-- Statistic detail -->
-                    
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <!-- Card Tchat -->
+                        <div class="card__stats">
+                            <div class="card__stats__head">
+                                <div class="card__stats__head__icon">
+                                    <img src="../images/chats-icon.png" alt="chat">
+                                </div>
+                                <h4>Chats</h4>
+                            </div>
+                            <!-- Nombre de Tchats  -->
+                            <div class="card__stats__info card__stats__info--tchat">
+                                <div class="card__stats__info--tchat__content">
+                                    <span>Repondus</span>
+                                    <div class="d-flex mt-3">
+                                        <div class="card__stats__info__icon card__stats__info__icon--tchat">
+                                            <img src="../images/curve-arrow.png" alt="curve">
+                                        </div>
+                                        <span class="card__stats__info--percent card__stats__info--percent__tchat">50</span>
+                                    </div>
+                                </div>
+                                <div class="card__stats__info--tchat__content">
+                                    <span>Non Repondus</span>
+                                    <div class="d-flex mt-3">
+                                        <div class="card__stats__info__icon card__stats__info__icon--tchat">
+                                            <img src="../images/curve-arrow.png" alt="curve">
+                                        </div>
+                                        <span class="card__stats__info--percent card__stats__info--percent__tchat">50</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Stats Par semaines  -->
+                            <div class="card__stats__historique">
+                                <!-- Plus Grand Nombre -->
+                                <span>Semaine Passsée</span>
+                                <div class="card__stats__historique__icon">
+                                    <img src="../images/upload.png" alt="upload">
+                                </div>
+                                <span class="card__stats__historique--percent">50</span>
+                                <!-- plus petit nombre -->
+                                <div class="card__stats__historique__icon">
+                                    <img src="../images/download.png" alt="download">
+                                </div>
+                                <span class="card__stats__historique--percent">10</span>
+                            </div>
+                        </div>
+                        <!-- End card tchat -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <!-- Card Page View -->
+                        <div class="card__stats">
+                            <div class="card__stats__head">
+                                <div class="card__stats__head__icon">
+                                    <img src="../images/eye.png" alt="view">
+                                </div>
+                                <h4>Pages Vues</h4>
+                            </div>
+                            <!-- Nombre Pages View -->
+                            <div class="card__stats__info">
+                                <span>Aujourd'hui</span>
+                                <div class="card__stats__info__icon">
+                                    <img src="../images/curve-arrow.png" alt="curve">
+                                </div>
+                                <span class="card__stats__info--percent">50</span>
+                            </div>
+                            <!-- Stats Par semaines  -->
+                            <div class="card__stats__historique ">
+                                <!-- Plus Grand Nombre -->
+                                <span>Semaine Passsée</span>
+                                <div class="card__stats__historique__icon">
+                                    <img src="../images/upload.png" alt="upload">
+                                </div>
+                                <span class="card__stats__historique--percent">50</span>
+                                <!-- plus petit nombre -->
+                                <div class="card__stats__historique__icon">
+                                    <img src="../images/download.png" alt="download">
+                                </div>
+                                <span class="card__stats__historique--percent">10</span>
+                            </div>
+                        </div>
+                        <!-- end card page View -->
+                    </div>
+                </div>
+                <!-- End Stats Details  -->
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="historique">
+                    <div class="historique__head">
+                        <!-- profil icon -->
+                        <div class="historique__head__icon">
+                            <img src="../images/person.png" alt="profil">
+                        </div>
+                        <h4>Historiques</h4>
+                    </div>
+                    <!-- Liste Visteurs -->
+                    <table class="historique__table">
+                        <thead>
+                            <tr>
+                                <td class="historique__table--client">Client</td>
+                                <td>Agent</td>
+                                <td>Time</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="conversation">
+                                <td class="historique__table--client">V9874655644436543V</td>
+                                <td class="historique__table--admin">
+                                    <div class="historique__table--admin__icon"></div>
+                                </td>
+                                <td><span>13 Jul </span>10H</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- fin liste visiteurs -->
+                </div>
+            </div>
+            <!-- Bloc Affichage Historique Msg -->
+            <div class="all__conversation" id="allConversation">
+                <div class="all__conversation__close">
+                    <button type="button" class="btn__conversation" id="conversationClose">Fermer</button>
                 </div>
             </div>
         </div>
-        <!-- Fin Statistic -->
+        <!-- End Statistic -->
     </div>
-    <!-- fin page content -->
+    <!-- End page content -->
 
-    <!-- mes scripts -->
+    <!-- My scripts -->
     <link rel="stylesheet" href="../js/jquery.min.js">
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

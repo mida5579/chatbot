@@ -1,0 +1,73 @@
+.card__stats{
+    min-height: 5rem;
+    border: 1px solid #ccc;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: $box-shadow;
+    background-color: $color-white;
+
+    &__head{
+        display: flex;
+        align-items: center;
+
+        &__icon{
+            height: 3rem;
+            width: 3rem;
+            margin-right: 1rem;
+
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+
+        &--tchat{
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        &__icon{
+            height: 5rem;
+            width: 3rem;
+            margin-right: 2rem;
+
+            &--tchat{
+                height: 2rem !important;
+                margin-right: 0;
+            }
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__historique{
+        display: flex !important;
+        align-items: center;
+        margin-top: 1rem;
+
+        &__icon{
+            height: 5rem;
+            width: 2rem;
+            margin: 0 .5rem 0 1rem;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

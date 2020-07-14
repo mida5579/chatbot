@@ -16,6 +16,10 @@ html {
   overflow-x: hidden;
 }
 
+.admin {
+  background-color: #dbdbe0;
+}
+
 .interface__chat p {
   font-size: 1.3rem;
 }
@@ -23,6 +27,10 @@ html {
 .interface__chat span {
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+.interface__chat .message__admin__contenu--time {
+  float: right;
 }
 
 .interface__chat .ets__name {
@@ -35,9 +43,43 @@ html {
   font-size: 1.5rem;
 }
 
+/******************************************************/
+.card__stats h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.card__stats span {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.card__stats__info--tchat__content span {
+  font-size: 1.6rem !important;
+}
+
+.card__stats__info--percent {
+  color: #d30707;
+  font-weight: bold;
+  font-size: 3rem !important;
+}
+
+.card__stats__info--percent__tchat {
+  color: black;
+}
+
+.historique__table thead {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.historique__table tbody {
+  font-size: 1.4rem;
+}
+
 .interface__chat {
   height: 50rem;
-  width: 18%;
+  width: 38rem;
   position: absolute;
   right: 5%;
   bottom: 20%;
@@ -45,6 +87,20 @@ html {
   -webkit-box-shadow: 10px -18px 113px -69px rgba(0, 0, 0, 0.75);
           box-shadow: 10px -18px 113px -69px rgba(0, 0, 0, 0.75);
   visibility: hidden;
+}
+
+@media only screen and (max-width: 414px) {
+  .interface__chat {
+    width: 30rem;
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .interface__chat {
+    width: 27rem;
+    height: 35rem;
+  }
 }
 
 .interface__chat__head {
@@ -60,8 +116,8 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem;
-  -webkit-box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
   z-index: 1;
   border-radius: 1rem 1rem 0 0;
 }
@@ -151,17 +207,24 @@ html {
   float: right;
 }
 
-.interface__chat__body .message__client__contenu p {
+.interface__chat__body .message__client__contenu .message {
   background-color: #670362;
   padding: 1rem;
   border-radius: 1rem;
   color: white;
   margin-bottom: .5rem;
+  display: block;
+  float: right;
+}
+
+.interface__chat__body .message__client__contenu--time {
+  clear: both;
+  display: block;
 }
 
 .interface__chat__foot {
-  -webkit-box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
   border-radius: 0 0 1rem 1rem;
 }
 
@@ -230,6 +293,18 @@ html {
   transition: all .3s ease;
 }
 
+@media only screen and (max-width: 414px) {
+  .chatBlocView {
+    bottom: 30%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .chatBlocView {
+    bottom: 33%;
+  }
+}
+
 .page__content {
   margin-left: 7rem;
   width: calc(100% - 7rem);
@@ -240,9 +315,11 @@ html {
 .graphic {
   height: 50vh;
   width: 100%;
-  -webkit-box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
   padding: 2rem 1rem;
+  background-color: white;
+  border-radius: 1rem;
 }
 
 .dropmenu {
@@ -251,12 +328,81 @@ html {
   border: 1px solid #ccc;
 }
 
+.historique {
+  height: 95vh;
+  -webkit-box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
+  border-radius: 1rem;
+  background-color: white;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+.historique__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.historique__head__icon {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  margin-right: 1.5rem;
+}
+
+.historique__head__icon img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.historique__table {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.historique__table tr {
+  height: 5rem;
+  padding: 0 1rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.historique__table thead {
+  border-bottom: 1px solid #dbdbe0;
+}
+
+.historique__table tbody tr:hover {
+  background-color: #670362;
+  cursor: pointer;
+  color: white;
+}
+
+.historique__table--client {
+  width: 60%;
+}
+
+.historique__table--admin__icon {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  margin-right: 1.5rem;
+  background-color: white;
+}
+
 .btn__button__chat {
   position: fixed;
   right: 1%;
   bottom: 0;
-  -webkit-transform: translate(-97%, -98%);
-          transform: translate(-97%, -98%);
+  -webkit-transform: translate(-99%, -100%);
+          transform: translate(-99%, -100%);
   height: 7rem;
   width: 7rem;
   background-color: #670362;
@@ -284,6 +430,22 @@ html {
 
 .btn__button__chat .fermer {
   display: none;
+}
+
+.btn__conversation {
+  float: right;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: #d30707;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn__conversation:hover {
+  background-color: rgba(211, 7, 7, 0.8);
 }
 
 .sidebar {
@@ -322,5 +484,126 @@ html {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.card__stats {
+  min-height: 5rem;
+  border: 1px solid #ccc;
+  margin-top: 5rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.45);
+  background-color: white;
+}
+
+.card__stats__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__stats__head__icon {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.card__stats__head__icon img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card__stats__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.card__stats__info--tchat {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.card__stats__info__icon {
+  height: 5rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.card__stats__info__icon--tchat {
+  height: 2rem !important;
+  margin-right: 0;
+}
+
+.card__stats__info__icon img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card__stats__historique {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.card__stats__historique__icon {
+  height: 5rem;
+  width: 2rem;
+  margin: 0 .5rem 0 1rem;
+}
+
+.card__stats__historique__icon img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.all__conversation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-height: 80vh;
+  width: 60rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 2222;
+  display: none;
+}
+
+.all__conversation__close {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 2rem;
+}
+
+.conversationView {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
