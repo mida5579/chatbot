@@ -1,0 +1,113 @@
+//general
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a,a:hover{
+    text-decoration: none;
+    color: $color-black;
+}
+
+//premiere sevtion des cards
+.box{
+    margin-top: 2rem;
+    h2{
+        font-size:3.5rem;
+        color: $color-titre;
+        font-weight: 500;
+    }
+
+    p{
+        font-size: 1.5rem;
+        color:  $color-text;
+        margin-top: 1rem;
+    }
+
+
+
+    .illustration{
+        color: $color-violet;
+    }
+
+    .description{
+        h3{
+            font-size: 2rem;
+            margin-top: 4rem;
+            color: $color-titre;
+        }
+
+        p{
+            font-size: 1.5rem;
+            color:  $color-text;
+        }
+    }
+}
+
+
+//footer
+.row-foot{
+    margin-bottom: 2rem;
+    h3{
+        font-size: 2rem;
+        line-height: 2rem;
+        color: $color-text;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    p{
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        color:  $color-text;
+    }
+
+    ul{
+        display: block;
+        margin: 1.5rem;
+
+        li{
+            list-style: none;
+            font-size: 1.5rem;
+            padding-top: 1.5rem;
+            
+            a{
+                color:  $color-text;
+                transition: all .3s ease;
+
+                &:hover{
+                color:  $color-violet;
+                }
+            }
+        }
+    }
+}
+
+.footer2{
+    .inline-items{
+        ul{
+            display: flex;
+            
+            li{
+                list-style: none;
+                padding-left: 1rem;
+                 list-style: none;
+                font-size: 1.5rem;
+                font-weight: bold;
+               
+            
+                a{
+                color:  $color-text;
+                transition: all .3s ease;
+
+                &:hover{
+                color:  $color-violet;
+                }
+            }
+            }
+        }
+    }
+
+    span{
+        color:  $color-text;
+    }
+}

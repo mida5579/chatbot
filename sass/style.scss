@@ -1,5 +1,7 @@
 @import'abstracts/variable';
+
 @import'bases/bases';
+@import'bases/typography';
 
 @import'components/section__cards-descr';
 @import'components/icone';
@@ -9,5 +11,6 @@
 @import'layout/section_publ';
 @import'layout/section_intro';
 @import'layout/apropo';
-@import'layout/section_cards';
 @import'layout/footer';
+@import'layout/section_cards';
+
