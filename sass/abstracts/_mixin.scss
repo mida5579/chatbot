@@ -1,7 +1,15 @@
 
 @mixin  responsive($breakpoint) {
+
+    @if $breakpoint == phoneB {
+        @media only screen and (max-width: 320px){ @content };
+    }
+
     @if $breakpoint == phoneSmaller{
         @media only screen and (max-width:377px) {@content};
+    }
+    @if $breakpoint == phoneB {
+        @media only screen and (max-width: 414px){ @content };
     }
 
      @if $breakpoint == phoneSmall{
