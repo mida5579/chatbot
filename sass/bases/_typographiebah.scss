@@ -1,0 +1,78 @@
+// chat bot interface
+.interface__chat{
+
+    p{
+        font-size: 1.3rem;
+    }
+
+
+    span{
+        font-size: 1.4rem;
+        font-weight: 400;
+       
+    }
+
+    .message__admin__contenu--time{
+        float: right;
+    }
+    // Chat Head title
+    .ets__name{
+        font-size: 2rem;
+        color: $color-white;
+        font-weight: bold;
+    }
+
+    textarea{
+        font-size: 1.5rem;
+    }
+}
+
+/******************************************************/
+// card STats Admin
+.card__stats{
+    h4{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    span{
+            font-size: 1.7rem;
+            font-weight: 300;
+        }
+
+    &__info{
+
+        &--tchat{
+
+            &__content{
+                span{
+                    font-size: 1.6rem !important;
+                }
+            }
+
+        }
+
+        &--percent{
+            color: $color-red;
+            font-weight: bold;
+            font-size: 3rem !important;
+
+            &__tchat{
+                color: black;
+            }
+        }
+    }
+}
+
+
+.historique__table{
+
+    thead{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    tbody{
+        font-size: 1.4rem;
+    }
+}
