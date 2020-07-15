@@ -1,0 +1,68 @@
+.historique{
+    height: 95vh;
+    box-shadow: $box-shadow;
+    border-radius: 1rem;
+    background-color: $color-white;
+    padding: 2rem;
+    overflow: scroll;
+
+    &__head{
+        display: flex;
+        align-items: center;
+
+        &__icon{
+            height: 4rem;
+            width: 4rem;
+            border-radius: 1rem;
+            border: 1px solid #ccc;
+            margin-right: 1.5rem;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__table{
+        width: 100%;
+        margin-top: 5rem;
+        
+
+        tr{
+            height: 5rem;
+            padding: 0 1rem;
+            transition: all .3s;
+        }
+
+        thead{
+            border-bottom: 1px solid $color-bg;
+        }
+
+        tbody{
+
+            tr:hover{
+                background-color: $color-blue;
+                cursor: pointer;
+                color: $color-white;
+            }
+        }
+
+        &--client{
+            width: 60%;
+        }
+
+        &--admin{
+
+            &__icon{
+                height: 4rem;
+                width: 4rem;
+                border-radius: 1rem;
+                border: 1px solid #ccc;
+                margin-right: 1.5rem;
+                background-color: $color-white;
+            }
+        }
+    }
+}
