@@ -1,6 +1,7 @@
-.section__cards__description{
+.sectioncards__description{
     height: 40rem;
     width: 100%;
+    background-color: red;
 
     .img{
         width: 100%;
@@ -8,9 +9,9 @@
         object-fit: contain;
     }
 
-    @include responsive ( phoneSmall){
-       margin-bottom: 2rem;
-    }
+    // @include responsive ( phoneSmall){
+    //    margin-bottom: 2rem;
+    // }
 
 }
 
@@ -40,7 +41,7 @@
             margin-bottom: 2rem;
         }
 
-        @include responsive ( phoneSmaller){
+        @include responsive( phoneSmaller){
             p{
                 font-size: 1.3rem;
         
