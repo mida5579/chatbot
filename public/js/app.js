@@ -25,10 +25,10 @@ nextBtnThi.addEventListener("click", function () {
     current += 1;
 });
 
-nextBtnFour.addEventListener("click", function () {
-    slidePage.style.marginLeft = "-100%";
-    current += 1;
-});
+// nextBtnFour.addEventListener("click", function () {
+//     slidePage.style.marginLeft = "-100%";
+//     current += 1;
+// });
 
 
 prevBtnSec .addEventListener("click", function(){

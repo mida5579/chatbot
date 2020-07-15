@@ -214,7 +214,19 @@ footer .footer2 {
   color: #333;
 }
 
-.card-form .row-typ #message {
+@media only screen and (max-width: 770px) {
+  .card-form__outer form .page__field input {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 453px) {
+  .card-form__outer form .page__field input {
+    width: 20rem;
+  }
+}
+
+.card-form .row-color #message {
   width: 100%;
   margin-top: 1rem;
   font-size: 1.6rem;
@@ -269,12 +281,14 @@ footer .footer2 {
 .user-admin .user-input {
   height: 3rem;
   width: 20rem;
+  padding: 1rem;
 }
 
-.user-admin i {
-  margin-top: .7rem;
-  margin-right: 1rem;
-  font-size: 1.8rem;
+.user-admin .user-input1 {
+  height: 3rem;
+  width: 20rem;
+  margin-left: 1rem;
+  padding: 1rem;
 }
 
 .user-admin .btnd3 {
@@ -333,9 +347,8 @@ footer .footer2 {
 }
 
 .table-description {
-  width: 30rem;
+  width: 35rem;
   height: 7rem;
-  margin-left: 4rem;
   -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
           box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
@@ -512,6 +525,7 @@ footer .footer2 {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   outline: none;
+  margin-bottom: 1rem;
 }
 
 .page__field button:hover, .page__field button:focus {
@@ -519,6 +533,10 @@ footer .footer2 {
           box-shadow: inset 0 -4.25rem 0 0 #fff;
   color: #670362;
   border: 1px solid #670362;
+}
+
+.page__field button a {
+  color: #fff;
 }
 
 .addmore {

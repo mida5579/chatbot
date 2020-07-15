@@ -25,6 +25,10 @@
         @media only screen and (max-width:767px) {@content};
     }
 
+      @if $breakpoint == phoneN{
+        @media only screen and (max-width:770px) {@content};
+    }
+
      @if $breakpoint == phoneX{
         @media only screen and (max-width:800px) {@content};
     }
