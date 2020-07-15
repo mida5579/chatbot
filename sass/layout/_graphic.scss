@@ -1,0 +1,16 @@
+.graphic{
+    min-height: 50vh;
+    width: 100%;
+    box-shadow: $box-shadow;
+    padding: 2rem 1rem;
+    background-color: $color-white;
+    border-radius: 1rem;
+    overflow: scroll;
+
+    canvas{
+        height: 50vh !important;
+        @include responsive(tab-portS){
+            width: 130rem !important;
+        }
+    }
+}
