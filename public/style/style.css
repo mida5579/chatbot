@@ -161,6 +161,15 @@ a, a:hover {
   color: #670362;
 }
 
+@media only screen and (max-width: 377px) {
+  .section__cards__illustration__item p {
+    font-size: 1.3rem;
+  }
+  .section__cards__illustration__item i {
+    margin-top: 1rem;
+  }
+}
+
 .inline-icon {
   display: -webkit-box;
   display: -ms-flexbox;
