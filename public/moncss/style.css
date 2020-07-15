@@ -81,6 +81,14 @@ a, a:hover {
   margin-top: 2rem;
 }
 
+.connex h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #670362;
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+
 .row-foot {
   margin-bottom: 2rem;
 }
@@ -244,6 +252,13 @@ footer .footer2 {
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 453px) {
+  .user-admin {
+    display: block;
+    margin-bottom: 2rem;
+  }
+}
+
 .user-admin h4 {
   font-size: 1.7rem;
 }
@@ -284,11 +299,23 @@ footer .footer2 {
   padding: 1rem;
 }
 
+@media only screen and (max-width: 453px) {
+  .user-admin .user-input {
+    margin-bottom: 2rem;
+  }
+}
+
 .user-admin .user-input1 {
   height: 3rem;
   width: 20rem;
   margin-left: 1rem;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 453px) {
+  .user-admin .user-input1 {
+    margin-left: 0;
+  }
 }
 
 .user-admin .btnd3 {
@@ -348,10 +375,25 @@ footer .footer2 {
 
 .table-description {
   width: 35rem;
-  height: 7rem;
+  height: 27rem;
   -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
           box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .table-description {
+    width: 25rem;
+    margin-left: 2rem;
+    height: 7rem;
+  }
+}
+
+@media only screen and (max-width: 453px) {
+  .table-description {
+    width: 20rem;
+    height: 7rem;
+  }
 }
 
 .card-script {
@@ -368,11 +410,21 @@ footer .footer2 {
   font-size: 1.4rem;
 }
 
+.connexion {
+  position: relative;
+  height: 100vh;
+}
+
 .Ncard-form {
   min-height: 40rem;
+  width: 50rem;
   background-color: transparent;
-  margin: 5% auto;
+  position: absolute;
   padding: 3rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
           box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
@@ -557,6 +609,12 @@ footer .footer2 {
 
 .addmore:hover {
   border: 3px solid #670362;
+}
+
+@media only screen and (max-width: 453px) {
+  .addmore {
+    margin-top: 2rem;
+  }
 }
 
 .copycode {

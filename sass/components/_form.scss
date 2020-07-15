@@ -75,6 +75,11 @@
     justify-content: center;
     margin-top: 2rem;
 
+      @include responsive ( phoneSmall){
+            display:block;
+            margin-bottom: 2rem;
+        }
+
     h4{
         font-size: 1.7rem;
     }
@@ -113,13 +118,21 @@
         height: 3rem;
         width: 20rem;
         padding: 1rem;
+
+          @include responsive ( phoneSmall){
+            margin-bottom: 2rem;
+        }
     }
 
      .user-input1{
         height: 3rem;
         width: 20rem;
         margin-left: 1rem;
-          padding: 1rem;
+        padding: 1rem;
+
+            @include responsive ( phoneSmall){
+             margin-left: 0;
+        }
     }
 
 

@@ -46,6 +46,10 @@
     &:hover{
         border: 3px solid $color-violet;
     }
+
+       @include responsive ( phoneSmall){
+            margin-top: 2rem;
+        }
 }
 
 .copycode{
