@@ -601,6 +601,21 @@ footer .footer2 {
   height: 50vh !important;
 }
 
+.graphic {
+  min-height: 50vh;
+  width: 100%;
+  -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+  padding: 2rem 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.graphic canvas {
+  height: 50vh !important;
+}
+
 .page__content {
   min-height: 50rem;
   width: 100%;
