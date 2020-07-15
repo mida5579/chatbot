@@ -1,0 +1,96 @@
+.rounded-circle{
+    display: flex;
+    margin-bottom: 2rem;
+    .red{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: red;
+        cursor: pointer;
+
+      
+    }
+
+     .yellow{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: yellow;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+
+     .green{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: green;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+
+     .purple{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: purple;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+
+     .gray{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: gray;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+
+      .black{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: black;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+}
+
+.rounded-icon{
+    display: flex;
+   .sms1{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color:rgb(240, 240, 130);
+        
+   }
+
+    .sms2{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: rgb(240, 240, 130);
+        margin-left: 1rem;
+   }
+
+    .sms3{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color:rgb(240, 240, 130);
+        margin-left: 1rem;
+   }
+
+   i{
+       margin-top: 1rem;
+       color: white;
+       cursor: pointer;
+   }
+}

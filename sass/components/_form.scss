@@ -1,0 +1,152 @@
+.card-form{
+    background-color:transparent;
+    text-align: center;
+    min-height: 60rem;
+    margin-top: 05%;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    padding: 5rem;
+
+    &__img{
+        height: 5rem;
+    }
+    
+    &__outer{
+         overflow: hidden;
+         width: 100%;
+        
+         form{
+            display: flex;
+            width: 400%;
+
+            .page{
+                width: 25%;
+                transition: margin-left 0.3s ease-in-out;
+                margin-top: 7rem;
+
+                &__field{
+                    margin: 4.5rem 0;
+
+                    &__label{
+                        position: absolute;
+                            h4{
+                                font-size: 1.6rem ;
+                                color:$color-titre;
+                            }
+                    }
+
+
+                    input{
+                        height: 100%;
+                        width: 50rem;
+                        padding: 1rem;
+                        border: 1px solid lightgrey;
+                        border-radius: $border-radius;
+                        font-size: 1.6rem ;
+                        color: $color-text; 
+                    }
+                }
+            }
+        }
+    }  
+
+    .row-typ{
+        #message{
+            width: 100%;
+            margin-top: 1rem;
+            font-size: 1.6rem;
+            padding: 1rem;
+        }
+    }
+}
+
+.user-admin{
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    h4{
+        font-size: 1.7rem;
+    }
+
+    &__role{
+        display: flex;
+        margin-left: 4rem;
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        .btnd1{
+            background: rgba($color-violet,0.3);
+            border: 1px solid $color-violet;
+            padding: .6rem;
+
+            a{
+                font-size: 1rem;
+            }
+        }
+
+        .btnd2{
+            border: 1px solid $color-violet;
+            padding: .6rem;
+
+            a{
+                font-size: 1rem;
+            }
+        }
+
+
+    }
+
+
+    .user-input{
+        height: 3rem;
+        width: 20rem;
+    }
+
+    i{
+        margin-top: .7rem;
+        margin-right: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .btnd3{
+        background: rgba($color-violet,0.3);
+        border: 1px solid $color-violet;
+        padding: .6rem;
+
+        a{
+            font-size: 1rem;
+        }
+    }
+
+    .btnd4{
+            border: 1px solid $color-violet;
+            padding: .6rem;
+
+            a{
+                font-size: 1rem;
+            }
+    }
+}
+
+
+
+.Ncard-form{
+
+    form{
+        margin-top: 6rem;
+    }
+
+    .page__field{
+        input{
+            width: 30rem;
+            height: 4rem;
+            margin-bottom: 3rem;
+            font-size: 1.6rem;
+            padding: 1rem;
+        }
+    }
+}

@@ -1,7 +1,19 @@
-@import'abstracts/variable';
-@import'bases/bases';
+//abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import'layout/navbar';
-@import'layout/section_publ';
-@import'layout/section_intro';
-@import'layout/apropo';
+//base
+@import 'base/reset';
+@import 'base/typography';
+
+//layouts
+@import 'layouts/contact';
+@import 'layouts/footer';
+
+//components
+@import 'components/form';
+@import 'components/cards';
+@import 'components/icon';
+@import 'components/image';
+@import 'components/circle';
+@import 'components/buttons';
