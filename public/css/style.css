@@ -225,7 +225,7 @@ footer .footer2 {
 }
 
 .card-form .row-color #message {
-  width: 98%;
+  width: 100%;
   margin-top: 1rem;
   font-size: 1.6rem;
   padding: 1rem;
@@ -325,27 +325,12 @@ footer .footer2 {
   margin-top: 6rem;
 }
 
-.Ncard-form form .page__field input {
+.Ncard-form .page__field input {
   width: 30rem;
   height: 4rem;
   margin-bottom: 3rem;
   font-size: 1.6rem;
   padding: 1rem;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #ccc;
-}
-
-@media only screen and (max-width: 453px) {
-  .Ncard-form form .page__field input {
-    width: 20rem;
-  }
-}
-
-.Ncard-form p {
-  color: red;
-  margin-top: -2rem;
 }
 
 .row-cards {
@@ -373,7 +358,7 @@ footer .footer2 {
 
 .table-description {
   width: 35rem;
-  height: 20rem;
+  height: 27rem;
   box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
 }
@@ -425,18 +410,6 @@ footer .footer2 {
   border-radius: 1rem;
 }
 
-@media only screen and (max-width: 551px) {
-  .Ncard-form {
-    width: 40rem;
-  }
-}
-
-@media only screen and (max-width: 453px) {
-  .Ncard-form {
-    width: 30rem;
-  }
-}
-
 .inline-icon {
   display: flex;
   float: right;
@@ -477,8 +450,8 @@ footer .footer2 {
 }
 
 .rounded-circle .red {
-  height: 3rem;
-  width: 3rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   background-color: red;
   cursor: pointer;
@@ -534,23 +507,23 @@ footer .footer2 {
 }
 
 .rounded-icon .sms1 {
-  height: 4rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   background-color: #f0f082;
 }
 
 .rounded-icon .sms2 {
-  height: 4rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   background-color: #f0f082;
   margin-left: 1rem;
 }
 
 .rounded-icon .sms3 {
-  height: 4rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   background-color: #f0f082;
   margin-left: 1rem;
@@ -560,21 +533,6 @@ footer .footer2 {
   margin-top: 1rem;
   color: white;
   cursor: pointer;
-}
-
-.table-description {
-  position: relative;
-}
-
-.table-description .rond {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
-  background-color: #f0f082;
-  position: absolute;
-  /* float: left; */
-  transform: translate(25rem, 12rem);
-  /* margin: 14rem;*/
 }
 
 .page__field button {

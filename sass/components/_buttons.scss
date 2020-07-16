@@ -63,7 +63,7 @@
 
 .btn-inscrip{
       button{
-          padding: 1rem 3rem;
+        padding: .6rem 3rem;
         border: none;
         border-radius: 1rem;
         font-size: 1.6rem;
@@ -78,6 +78,28 @@
           &:hover{
             background-color:$color-violet;
         }
+    }
+}
+
+
+.btn-connex{
+    button{
+        padding: .6rem 3rem;
+      border: none;
+      border-radius: 1rem;
+      font-size: 1.6rem;
+      background-color: rgba($color-violet , 0.4);
+      border: 1px solid $color-violet;
+
+
+      a{
+          color: $color-white;
+      }
+
+        &:hover{
+          background-color:$color-violet;
+      }
+
     }
 }
   

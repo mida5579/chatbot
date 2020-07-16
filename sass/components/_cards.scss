@@ -23,7 +23,7 @@
 
 .table-description{
     width: 35rem;
-    height: 27rem;
+    height: 20rem;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
 
@@ -69,4 +69,12 @@
     transform: translate(-50%,-50%);
      box-shadow: $box-shadow;
     border-radius: $border-radius;
+
+    @include responsive ( phoneS){
+        width: 40rem;
+    }
+
+    @include responsive ( phoneSmall){
+        width: 30rem;
+    }
 }

@@ -3,8 +3,8 @@
     margin-bottom: 2rem;
     
     .red{
-        height: 6rem;
-        width: 6rem;
+        height: 3rem;
+        width: 3rem;
         border-radius: 50%;
         background-color: red;
         cursor: pointer;
@@ -64,25 +64,26 @@
 
 .rounded-icon{
     display: flex;
+
    .sms1{
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
         border-radius: 50%;
         background-color:rgb(240, 240, 130);
         
    }
 
     .sms2{
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
         border-radius: 50%;
         background-color: rgb(240, 240, 130);
         margin-left: 1rem;
    }
 
     .sms3{
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
         border-radius: 50%;
         background-color:rgb(240, 240, 130);
         margin-left: 1rem;
@@ -93,4 +94,18 @@
        color: white;
        cursor: pointer;
    }
+}
+
+.table-description{
+    position: relative;
+    .rond{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: #f0f082;
+        position: absolute;
+        /* float: left; */
+        transform: translate(25rem, 12rem);
+        /* margin: 14rem;*/
+    }
 }
