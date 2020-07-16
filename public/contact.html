@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <!-- differents liens css bootstrap fontawesome etc... -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="card-form">
+            <img src="images/téléchargement.png" alt="logo" class="card-form__img">
+            <!-- formulaire -->
+            <div class="card-form__outer">
+                <form action="#">
+                    <div class="page slide-page">
+                        <div class="page__title">
+                            <h5>Property Details</h5> <span>Which website would like to add a chat widget to?</span>
+                        </div>
+                        <!-- input du formulaire -->
+                        <div class="page__field">
+                            <div class="page__label"><h4>Site name</h4></div>
+                            <input type="text">
+                        </div>
+                        <div class="page__field">
+                            <div class="page__label"><h4>Enter Site URL</h4></div>
+                            <input type="text">
+                        </div>
+                        <!-- premier bouton next -->
+                        <div class="page__field">
+                           <button class="firstNext next">Next</button>
+                        </div>
+                    </div>
+                    <!-- deuxieme partie qui tourne-->
+                    <div class="page ">
+                        <div class="page__title">
+                            <h5>How should your chat look ?</h5> <span>Bring the messenger closer to your brand</span>
+                        </div>
+                        <!-- input du formulaire -->
+                        <div class="page__field">
+                            <h4 class="text-left">themes</h4>
+                            <div class="row row-color">
+                               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <!-- ronds de couleur  -->
+                                <div class="rounded-circle">
+                                    <div class="red"></div>
+                                    <div class="yellow"></div>
+                                    <div class="green"></div>
+                                    <div class="purple"></div>
+                                    <div class="gray"></div>
+                                    <div class="black"></div>
+                                </div>
+                                    <!-- rond avec les icone de message -->
+                                    <h4 class="text-left">themes</h4>
+                                    <div class="rounded-icon">
+                                        <div class="sms1"><img src="images/chat-icon-1.svg" alt="chat" class="img-fluid"></div>
+                                        <div class="sms2"><img src="images/speech-bubble.png" alt="chat" class="img-fluid"></div>
+                                        <div class="sms3"><img src="images/comment.png" alt="chat" class="img-fluid"></div>
+                                        <div class="sms4"><img src="images/speech-bubble (1).png" alt="chat" class="img-fluid"></div>
+                                    </div> <br>
+                                        <!-- salutations  -->
+                                    <h4 class="text-left">Your greetings</h4>
+                                        <textarea name="Message" id="message" cols="25" rows="2" placeholder="Enter default message text"></textarea>
+                               </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="table-description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, sit. Repudiandae voluptatem est tempora illo nobis officiis aspernatur pariatur autem asperiores quia natus ipsa repellendus, ab nulla eius hic. Suscipit?</p>
+                                        <div class="rond"></div>
+                                    </div>
+
+                                </div>
+                            </div>   
+                        </div>
+                        <!-- deuxieme bouton next -->
+                        <div class="page__field btns">
+                            <button class="prev-1 prev">Previous</button>
+                            <button class="secondNext next">Next</button>
+                        </div>
+                    </div>
+                    <!-- troisieme partie qui tourne-->
+                    <div class="page ">
+                        <div class="page__title">
+                            <h5>Team Members</h5> <span>Invite your coworkers and set their access level. <br>
+                                An Admin can configure and customize settings, an Agent can only answer chats and tickets</span>
+                        </div>
+                        <!-- input du formulaire -->
+                        <div class="user-admin">
+                            <h4>user@gmail.com</h4>
+                            <div class="user-admin__role">
+                                <p>Role:</p>
+                                <div class="button-user">
+                                    <button disabled="disabled" class="btn btnd1"><a href="#">Admin</a></button>
+                                    <button disabled="disabled" class="btn btnd2"><a href="#">Agent</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="user-admin">
+                         <div class="times">
+                            <a href="#"><i class="fa fa-times fa-3x"></i></a>
+                         </div>
+                            <input type="email" class="user-input" placeholder="your email">
+                            <input type="password" class="user-input1" placeholder="your password">
+                        </div>
+                    
+                        <button class="addmore"><a href="#"> Add more</a></button>
+                        <!-- deuxieme bouton next -->
+                        <div class="page__field btns">
+                            <button class="prev-2 prev">Previous</button>
+                            <button class="thirdNext next">Next</button>
+                        </div>
+                    </div>
+                    <!-- quatrieme partie qui tourne-->
+                    <div class="page ">
+                        <div class="page__title">
+                            <h5>Install the code on your website</h5> <span>To make your Hippo live chat work properly, install the code below in your website</span>
+                            <br><br>
+                            <p>Look for in your website's html source code and paste the copied code snippet before . <br> Do this forevery page of your website where you want widget to appear</p>
+                        </div>
+                        <div class="card-script text-left">
+                           <code><br>
+                        script src="https://chat.hippochat.io/js/widget.js" script <br>
+                        script <br>
+                            window.initHippo({ <br>
+                                appSecretKey: "1b13c1a0990cca6f9a0462677aca5640" <br>
+                            });<br>
+                        script <br></code>
+                        <button class="copycode">Copy Code</button>
+                        </div>
+                        <!-- deuxieme bouton next -->
+                        <div class="page__field btns">
+                            <button class="prev-3 prev">Previous</button>
+                            <button class="NSubmit" type="button"><a href="#">submit</a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> 
+    <!-- ajout du cdn jquery etc... -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+        <script src="js/progressform.js"></script>
+       
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+.rounded-circle{
+    display: flex;
+    margin-bottom: 2rem;
+    
+    .red{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: red;
+        cursor: pointer;
+
+    }
+
+     .yellow{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: yellow;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+
+     .green{
+         height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: green;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+
+     .purple{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: purple;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+
+     .gray{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: gray;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+
+      .black{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: black;
+        cursor: pointer;
+        margin-left: 1rem;
+      
+    }
+}
+
+.rounded-icon{
+    display: flex;
+
+    .sms1{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color:black;
+         margin-left: 1rem;
+
+        img{
+            height:3rem;
+            margin-top: 1rem;
+        } 
+   }
+
+   .sms2{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color:black;
+         margin-left: 1rem;
+
+        img{
+            height:3rem;
+            margin-top: 1rem;
+        } 
+   }
+
+    .sms3{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color:black;
+        margin-left: 1rem;
+
+          img{
+            height:3rem;
+            margin-top: 1rem;
+        } 
+   }
+
+    .sms4{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color:black;
+        margin-left: 1rem;
+
+          img{
+            height:3rem;
+            margin-top: 1rem;
+        } 
+   }
+}
+
+.table-description{
+    position: relative;
+    .rond{
+        min-height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color:black;
+        margin: 14rem 25rem;
+        position: absolute;
+
+        @include responsive (tab-landS){
+        min-height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color:black;
+        position: relative;
+        margin: 2rem;
+        float: right;
+        }
+    }
+}

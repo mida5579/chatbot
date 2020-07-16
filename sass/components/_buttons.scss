@@ -75,3 +75,119 @@
             outline: none;
         }
     }
+
+
+
+
+
+    // Page fiel
+.page__field{
+    button{
+        width: 15rem;
+        height: 4rem;
+        border: none;
+        background-color: $color-violet;
+        border-radius: $border-radius;
+        color: $color-white;
+        cursor: pointer;
+        font-size: 1.3rem;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        transition: all .5s ease;
+        outline: none;
+        margin-bottom: 1rem;
+
+
+        &:hover,&:focus{
+            box-shadow: inset 0 -4.25rem 0 0 $color-white;
+            color: $color-violet;
+            border: 1px solid $color-violet;
+        }
+
+        a{
+            color: $color-white;
+
+            &:hover{
+                color: $color-violet;
+            }
+        }
+    }
+
+}
+
+// addMore
+.addmore{
+    padding: 1rem;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: 1px solid $color-violet;
+    transition: all .3s ease;
+    outline: none;
+
+    a{
+        color: $color-violet;
+    }
+
+    &:hover{
+        border: 3px solid $color-violet;
+    }
+
+       @include responsive ( phoneSmall){
+            margin-top: 6rem;
+        }
+}
+
+// copy Code
+.copycode{
+     padding: .6rem;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 1.2rem;
+    background-color: $color-white;
+}
+
+// btn inscription
+.btn-inscrip{
+      button{
+        padding: .6rem 3rem;
+        border: none;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        background-color: rgba($color-violet , 0.4);
+        border: 1px solid $color-violet;
+
+
+        a{
+            color: $color-white;
+        }
+
+          &:hover{
+            background-color:$color-violet;
+        }
+    }
+}
+
+// btn connexion
+.btn-connex{
+    button{
+        padding: .6rem 3rem;
+      border: none;
+      border-radius: 1rem;
+      font-size: 1.6rem;
+      background-color: rgba($color-violet , 0.4);
+      border: 1px solid $color-violet;
+
+
+      a{
+          color: $color-white;
+      }
+
+        &:hover{
+          background-color:$color-violet;
+      }
+
+    }
+}
+  
