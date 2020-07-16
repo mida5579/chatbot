@@ -767,6 +767,7 @@ footer .footer2 {
   min-height: 30rem;
   background-color: #fff;
   border-radius: 2rem;
+  margin-bottom: 3rem;
 }
 
 .profil__parameter__title {
@@ -785,16 +786,69 @@ footer .footer2 {
       justify-content: space-around;
 }
 
+@media only screen and (max-width: 600px) {
+  .profil__parameter__form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .profil__parameter__form__info {
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .profil__parameter__form__info {
+    width: 100%;
+  }
+}
+
+.profil__parameter__form__info__btn {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: .4rem;
+  background-color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.profil__parameter__form__info__btn:focus {
+  outline: none;
+}
+
+.profil__parameter__form__info__btn--send {
+  color: #670362;
+  border: 1px solid #670362;
+  margin-right: 1rem;
+}
+
+.profil__parameter__form__info__btn--send:hover {
+  -webkit-box-shadow: inset 0 -4.4rem 0 0 #670362;
+          box-shadow: inset 0 -4.4rem 0 0 #670362;
+  color: #fff;
+}
+
+.profil__parameter__form__info__btn--reset {
+  color: #d30707;
+  border: 1px solid #d30707;
+}
+
+.profil__parameter__form__info__btn--reset:hover {
+  -webkit-box-shadow: inset 0 -4.4rem 0 0 #d30707;
+          box-shadow: inset 0 -4.4rem 0 0 #d30707;
+  color: #fff;
+}
+
+.profil__parameter__form__info__btn--FormAgent {
+  -webkit-transition: none;
+  transition: none;
 }
 
 .profil__parameter__form__inputs {
   border: 1px solid #ccc;
   width: 100%;
   padding: .5rem 1rem;
-  border-left: 5px solid #670362;
-  border-bottom: 2px solid #670362;
   border-radius: 1rem;
   margin-bottom: 2rem;
 }
@@ -806,11 +860,32 @@ footer .footer2 {
   color: #dbdbe0;
 }
 
-.profil__parameter__form__inputs input {
+.profil__parameter__form__inputs input,
+.profil__parameter__form__inputs select {
   border: none;
   font-size: 1.5rem;
   width: 100%;
   background-color: #fff;
+}
+
+.profil__parameter__form__logo {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .profil__parameter__form__logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .profil__parameter__form__logo__illustration {
@@ -843,6 +918,12 @@ footer .footer2 {
   transition: ease-in-out .3s;
 }
 
+@media only screen and (max-width: 600px) {
+  .profil__parameter__form__logo .label-file {
+    width: 30%;
+  }
+}
+
 .profil__parameter__form__logo .label-file:hover {
   color: #fff;
   background-color: #670362;
@@ -850,6 +931,221 @@ footer .footer2 {
 
 .profil__parameter__form__logo .input-file {
   display: none;
+}
+
+.view__paramater {
+  width: 100%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.agent__parameter {
+  height: 100rem;
+  background-color: #fff;
+  margin-top: 3rem;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  overflow: scroll;
+  position: relative;
+}
+
+.agent__parameter h4 {
+  font-size: 2.3rem;
+  color: #670362;
+  margin-bottom: 3rem;
+}
+
+.agent__parameter__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+.agent__parameter__head__recherche {
+  width: 85%;
+  border: 2px solid #ccc;
+  height: 3rem;
+  background-color: aliceblue;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1rem;
+}
+
+.agent__parameter__head__recherche__icon {
+  height: 2.7rem;
+  width: 3rem;
+  border: none;
+  border-right: 2px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.agent__parameter__head__recherche__icon:focus {
+  outline: none;
+}
+
+.agent__parameter__head__recherche__icon img {
+  height: 100%;
+  width: 40%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.agent__parameter__head__recherche__form {
+  width: 100%;
+}
+
+.agent__parameter__head__recherche__form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.agent__parameter__head__recherche__form input::-webkit-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.agent__parameter__head__recherche__form input:-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.agent__parameter__head__recherche__form input::-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.agent__parameter__head__recherche__form input::placeholder {
+  font-size: 1.5rem;
+}
+
+.agent__parameter__head__addAgent {
+  padding: .9rem 1rem;
+  border: none;
+  background-color: #670362;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.agent__parameter__head__addAgent:hover, .agent__parameter__head__addAgent:focus {
+  -webkit-box-shadow: inset 0 -4.25rem 0 0 #fff;
+          box-shadow: inset 0 -4.25rem 0 0 #fff;
+  border: 1px solid #670362;
+  color: #670362;
+  outline: none;
+}
+
+.agent__parameter__table {
+  width: 200rem;
+}
+
+.agent__parameter__table thead {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.agent__parameter__table tbody {
+  font-size: 1.5rem;
+}
+
+.agent__parameter__table tbody tr {
+  height: 7rem;
+}
+
+.agent__parameter__table__column {
+  width: 10rem;
+}
+
+.agent__parameter__table__column--name {
+  width: 40rem;
+}
+
+.agent__parameter__table__column--email {
+  width: 50rem;
+}
+
+.agent__parameter__table__column--tel {
+  width: 30rem;
+}
+
+.agent__parameter__table__column--action {
+  width: 30rem;
+}
+
+.agent__parameter__table__btn {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.agent__parameter__table__btn:focus {
+  outline: none;
+}
+
+.agent__parameter__table__btn--edit {
+  border: 1px solid #670362;
+  color: #670362;
+}
+
+.agent__parameter__table__btn--edit:hover {
+  background-color: #670362;
+  color: #fff;
+}
+
+.agent__parameter__table__btn--delete {
+  border: 1px solid #d30707;
+  color: #d30707;
+}
+
+.agent__parameter__table__btn--delete:hover {
+  background-color: #d30707;
+  color: #fff;
+}
+
+.agent__parameter__formulaire {
+  width: 50%;
+  min-height: 10rem;
+  background-color: #fff;
+  -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 2rem;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .agent__parameter__formulaire {
+    width: 100%;
+  }
+}
+
+.formulaireAgentView {
+  visibility: visible;
+  top: 12%;
+  left: 50%;
+  -webkit-transform: trnaslateX(-50%);
+          transform: trnaslateX(-50%);
 }
 
 .sectioncardsDescription {
@@ -1507,19 +1803,41 @@ footer .footer2 {
   padding: 2rem 0;
 }
 
-.sidebar .sidebar__menu__item {
+.sidebar__logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+.sidebar__logo img {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 1rem;
+}
+
+.sidebar__menu {
+  margin-top: 5rem;
+}
+
+.sidebar__menu__item {
   padding: 1rem 0;
   margin-bottom: 2rem;
   -webkit-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
 }
 
-.sidebar .sidebar__menu__item:hover {
+.sidebar__menu__item:hover {
   background-color: rgba(255, 255, 255, 0.123);
   border-right: 3px solid #fff;
 }
 
-.sidebar .sidebar__menu__item--active {
+.sidebar__menu__item--active {
   background-color: rgba(255, 255, 255, 0.123);
   border-right: 3px solid #fff;
 }
@@ -1531,6 +1849,23 @@ footer .footer2 {
 }
 
 .sidebar__icon img {
+  height: 4rem;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.sidebar__deconnexion {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 4rem;
+  width: 4rem;
+}
+
+.sidebar__deconnexion img {
   height: 4rem;
   width: 100%;
   -o-object-fit: contain;

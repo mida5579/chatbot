@@ -12,6 +12,13 @@
 <body class="admin">
     <!-- Sidebar -->
     <div class="sidebar">
+        <!-- logo -->
+        <a href="accueilAdmin.html">
+            <div class="sidebar__logo">
+                <img src="../images/logo-nan.png" alt="logo">
+            </div>
+        </a>
+        <!-- fin logo -->
         <ul class="sidebar__menu">
             <li class="sidebar__menu__item">
                 <a data-toggle="tab" href="accueilAdmin.html" class="sidebar__menu__link">
@@ -40,14 +47,23 @@
 
     <!-- debut page content -->
     <div class="page__content">
-        <div class="container-fluid">
+        <!-- <div class="container-fluid"> -->
             <div class="row">
                 <!-- Parametre Profil -->
-                <div class="col-6">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="profil__parameter">
                         <h4 class="profil__parameter__title">Modifier Votre Profil</h4>
                         <!-- form Modification -->
                         <form action="#" class="profil__parameter__form">
+                            <!-- logo entreprise -->
+                            <div class="profil__parameter__form__logo">
+                                <div class="profil__parameter__form__logo__illustration">
+                                    <img src="../images/camera.png" alt="camera">
+                                </div>
+                                <label for="file" class="label-file">Choisir une image</label>
+                                <input id="file" class="input-file" type="file">
+                            </div>
+                            <!-- Fin Logo Ets -->
                             <!-- information personnelle  -->
                             <div class="profil__parameter__form__info">
                                 <div class="profil__parameter__form__inputs">
@@ -74,24 +90,20 @@
                                     <label for="confirmNewPassword">Confirmation mot de passe</label>
                                     <input type="password" id="confirmNewPassword">
                                 </div>
+                                <!-- Btn envoi du formulaire -->
+                                <button type="submit" class="profil__parameter__form__info__btn profil__parameter__form__info__btn--send">Modifier</button>
+                                <button type="reset" class="profil__parameter__form__info__btn profil__parameter__form__info__btn--reset">Annuler</button>
+                                <!-- fin button envoi -->
                             </div>
                             <!-- fin information personnelle -->
-                            <!-- logo entreprise -->
-                            <div class="profil__parameter__form__logo">
-                                <div class="profil__parameter__form__logo__illustration">
-                                    <img src="../images/camera.png" alt="camera">
-                                </div>
-                                <label for="file" class="label-file">Choisir une image</label>
-                                <input id="file" class="input-file" type="file">
-                            </div>
-                            <!-- Fin Logo Ets -->
+                            
                         </form>
                         <!-- Fin form Modification -->
                     </div>
                 </div>
                 <!-- Fin Parametre Profil -->
                 <!-- Debut Parametre D'affichage -->
-                <div class="col-6">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="view__paramater">
                         <h4>Parametre d'affichage</h4>
                         
@@ -99,8 +111,133 @@
                 </div>
                 <!-- Fin Parametre D'affichage -->
             </div>
-        </div>
+            <div class="agent__parameter">
+                <h4>Agents</h4>
+                <!-- En-tete de la card Agent -->
+                <div class="agent__parameter__head">
+                    <!-- zone de reccherche -->
+                    <div class="agent__parameter__head__recherche">
+                        <button type="submit" class="agent__parameter__head__recherche__icon">
+                            <img src="../images/search.png" alt="search">
+                        </button>
+                        <form action="" class="agent__parameter__head__recherche__form">
+                            <input type="search" placeholder="Search">
+                        </form>
+                    </div>
+                    <!-- Fin zone de recherchre -->
+                    <!-- button add agent -->
+                    <button class="agent__parameter__head__addAgent" id="edit">Ajouter</button>
+                    <!-- fin btn add agent -->
+                </div>
+                <!-- fin de l'en-tete -->
+                <!-- Table Liste des agents -->
+                <table class="agent__parameter__table">
+                    <thead>
+                        <tr>
+                            <td>No</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--name">Nom</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--email">Email</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--tel">Téléphone</td>
+                            <td class="agent__parameter__table__column">Role</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--action">Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="agent__parameter__table__column">01</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--name">Bah Ismaila</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--email">maelbah124@gmail.com</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--tel">+22501010101</td>
+                            <td class="agent__parameter__table__column">Admin</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--action">
+                                <button class="agent__parameter__table__btn agent__parameter__table__btn--edit" id="edit">Modifier</button>
+                                <button class="agent__parameter__table__btn agent__parameter__table__btn--delete">Supprimer</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="agent__parameter__table__column">02</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--name">Niamson Nelly</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--email">Naimson@@gmail.com</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--tel">+22501010101</td>
+                            <td class="agent__parameter__table__column">Admin</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--action">
+                                <button class="agent__parameter__table__btn agent__parameter__table__btn--edit" id="edit">Modifier</button>
+                                <button class="agent__parameter__table__btn agent__parameter__table__btn--delete">Supprimer</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="agent__parameter__table__column">03</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--name">Mida</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--email">mida@gmail.com</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--tel">+22501010101</td>
+                            <td class="agent__parameter__table__column">Admin</td>
+                            <td class="agent__parameter__table__column agent__parameter__table__column--action">
+                                <button class="agent__parameter__table__btn agent__parameter__table__btn--edit" id="edit">Modifier</button>
+                                <button class="agent__parameter__table__btn agent__parameter__table__btn--delete">Supprimer</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- fin table liste des agents -->
+                <!-- Formulaire agent -->
+                <div class="agent__parameter__formulaire">
+                    <h4 class="text-center">Ajouter un agent</h4>
+                    <!-- form Modification -->
+                    <form action="#" class="profil__parameter__form">
+                        <!-- information personnelle  -->
+                        <div class="profil__parameter__form__info">
+                            <div class="profil__parameter__form__inputs">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="profil__parameter__form__inputs">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="profil__parameter__form__inputs">
+                                <label for="phone">Téléphone</label>
+                                <input type="number" id="phone">
+                            </div>
+                            <div class="profil__parameter__form__inputs">
+                                <label for="role">Role</label>
+                                <select name="" id="role">
+                                    <option value="admin">Admin</option>
+                                    <option value="agent">Agent</option>
+                                </select>
+                            </div>
+                            <!-- Btn envoi du formulaire -->
+                            <button type="submit" class="profil__parameter__form__info__btn profil__parameter__form__info__btn--send profil__parameter__form__info__btn--FormAgent">Modifier</button>
+                            <button class="profil__parameter__form__info__btn profil__parameter__form__info__btn--reset profil__parameter__form__info__btn--FormAgent" id="formClose">Annuler</button>
+                            <!-- fin button envoi -->
+                        </div>
+                        <!-- fin information personnelle -->
+                    </form>
+                    <!-- Fin form AddAGent -->
+                </div>
+                <!-- Fin Formulaire Agent -->
+            </div>
+        <!-- </div> -->
     </div>
     <!-- fin page content -->
+
+    <!-- My scripts -->
+    <link rel="stylesheet" href="../js/jquery.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0-alpha/Chart.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        var edit = document.querySelectorAll('#edit');
+        var formulaire = document.querySelector('.agent__parameter__formulaire');
+        var formClose = document.querySelector('#formClose');
+
+        edit.forEach((editer) => {
+            editer.addEventListener('click', function(){
+                formulaire.classList.add('formulaireAgentView');
+            })
+        })
+
+        formClose.addEventListener('click', function(){
+            formulaire.classList.remove('formulaireAgentView');
+        })
+    </script>
 </body>
 </html>

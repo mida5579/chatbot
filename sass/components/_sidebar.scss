@@ -5,8 +5,26 @@
     position: fixed;
     padding: 2rem 0;
 
-    .sidebar__menu{
+    &__logo{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 1rem;
+        border: 1px solid #ccc;
+        margin: 1rem auto;
+        text-align: center;
+        background-color: $color-white;
 
+        img{
+            width: 80%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 1rem;
+        }
+    }
+
+
+    &__menu{
+        margin-top: 5rem;
         &__item{
             padding: 1rem 0;
             margin-bottom: 2rem;
@@ -28,6 +46,21 @@
         height: 4rem;
         width: 4rem;
         margin: 0 auto;
+
+        img{
+            height: 4rem;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__deconnexion{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4rem;
+        width: 4rem;
 
         img{
             height: 4rem;
