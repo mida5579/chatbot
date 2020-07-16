@@ -23,6 +23,10 @@
 
         a{
             color: $color-white;
+
+            &:hover{
+                color: $color-violet;
+            }
         }
     }
 
@@ -48,7 +52,7 @@
     }
 
        @include responsive ( phoneSmall){
-            margin-top: 2rem;
+            margin-top: 6rem;
         }
 }
 
