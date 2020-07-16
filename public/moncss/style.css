@@ -297,6 +297,12 @@ footer .footer2 {
   margin-top: .6rem;
 }
 
+@media only screen and (max-width: 453px) {
+  .user-admin__role {
+    margin-left: 4rem;
+  }
+}
+
 .user-admin .user-input {
   height: 3rem;
   width: 20rem;
@@ -671,6 +677,10 @@ footer .footer2 {
   color: #fff;
 }
 
+.page__field button a:hover {
+  color: #670362;
+}
+
 .addmore {
   padding: 1rem;
   border: none;
@@ -693,7 +703,7 @@ footer .footer2 {
 
 @media only screen and (max-width: 453px) {
   .addmore {
-    margin-top: 2rem;
+    margin-top: 6rem;
   }
 }
 

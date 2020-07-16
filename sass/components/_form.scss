@@ -115,6 +115,11 @@
             margin-top: .6rem;
         }
 
+
+         @include responsive ( phoneSmall){
+             margin-left: 4rem;
+        }
+
     }
 
 
