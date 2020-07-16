@@ -22,17 +22,17 @@
                     </div>
                 </a>
             </li>
-            <li class="sidebar__menu__item sidebar__menu__item__active">
+            <li class="sidebar__menu__item sidebar__menu__item--active">
                 <a data-toggle="tab" href="configuration.html" class="sidebar__menu__link">
                     <div class="sidebar__icon">
-                        <img src="../images/browser.png" alt="browser">
+                        <img src="../images/system.png" alt="system">
                     </div>
                 </a>
             </li>
             <li class="sidebar__menu__item">
                 <a data-toggle="tab" href="#menu2" class="sidebar__menu__link">
                     <div class="sidebar__icon">
-                        <img src="../images/browser.png" alt="browser">
+                        <img src="../images/settings.png" alt="setting">
                     </div>
                 </a>
             </li>
@@ -45,16 +45,16 @@
         <div class="progressMenu">
             <!-- progress menu steps -->
             <div class="progressMenu__steps">
-                <div class="progressMenu__steps__item next-0" id="active">
-                    <div class="progressMenu__steps__item__icon steps-active">1</div>
+                <div class="progressMenu__steps__item next-0 steps-active menu-active">
+                    <div class="progressMenu__steps__item__icon">1</div>
                     <span>Voir les clés de votre application</span>
                 </div>
-                <div class="progressMenu__steps__item next-1">
+                <!-- <div class="progressMenu__steps__item next-1 menu-active">
                     <div class="progressMenu__steps__item__icon">2</div>
                     <span>Lien vers le profil d'entreprise</span>
-                </div>
-                <div class="progressMenu__steps__item next-2">
-                    <div class="progressMenu__steps__item__icon">3</div>
+                </div> -->
+                <div class="progressMenu__steps__item next-2 menu-active">
+                    <div class="progressMenu__steps__item__icon">2</div>
                     <span>Installation</span>
                 </div>
             </div>
@@ -77,10 +77,10 @@
                         </div>
                         <span class="progressMenu__content__steps__key__copy">Copier</span>
                     </div>
-                    <button class="btn-steps next-1">Suivant : Lien vers le profil d'entreprise</button>
+                    <button class="btn-steps next-1 menu-active">Suivant : Lien vers le profil d'entreprise</button>
                 </div>
 
-                <div class="progressMenu__content__steps">
+                <!-- <div class="progressMenu__content__steps">
                     <h3>Lien Vers Le profil D'entreprise</h3>
                     <p>
                         Penser à votre propre page Web sans les tracas du code. Nous créerons votre propre domaine pour obtenir le chat des
@@ -96,16 +96,17 @@
                         </div>
                         <span class="progressMenu__content__steps__key__copy">Copier</span>
                     </div>
-                    <button class="btn-steps next-2">Suivant : Installation</button>
-                </div>
+                    <button class="btn-steps prev-0  menu-active">Précedent : Grandissez avce nous </button>
+                    <button class="btn-steps next-2  menu-active">Suivant : Installation</button>
+                </div> -->
 
-                <div class="progressMenu__content__steps">
+                <div class="progressMenu__content__steps  menu-active">
                     <h3>Integrer NaN-Bot</h3>
                     <p>
                         Pour discuter avec vos visiteurs, vous devrez intégrer le widget sur votre site Web.
                     </p>
                     <p>
-                        Copiez la source du script et la clé secrète de l'application à partir d'ici et inserer la source dans chaque page web de votre site où vous souhaitez que le Chat-Bot apparaisse
+                        Copiez la source du script et la clé secrète de l'application à partir d'ici et inserer la source dans chaque page web de votre site
                     </p>
                     <div class="progressMenu__content__steps__key">
                         <div class="progressMenu__content__steps__key__info progressMenu__content__steps__key__info--script">
@@ -118,7 +119,7 @@
                         </div>
                         <span class="progressMenu__content__steps__key__copy">Copier</span>
                     </div>
-                    <!-- <button class="btn-steps">Suivant : Lien vers le profil d'entreprise</button> -->
+                    <button class="btn-steps prev-0  menu-active">Précedent : Lien vers le profil d'entreprise </button>
                 </div>
             </div>
             <!-- Fin Steps Contents -->
@@ -130,6 +131,66 @@
     <link rel="stylesheet" href="../js/jquery.min.js">
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/admin.js"></script>
+    <script>
+        function slide() {
+                const slidepage = document.querySelector('.slide');
+                const nextBtn = document.querySelector('.next-0');
+                const nextBtnFirst = document.querySelectorAll('.next-2');
+                // const nextBtnSec = document.querySelectorAll('.next-2');
+                const prevBtn = document.querySelector('.prev-0');
+                // const prevBtnFirst = document.querySelector('.prev-1');
+                var activeColor = document.querySelector('#active');
+
+                nextBtn.addEventListener('click', function () {
+                    slidepage.style.marginLeft = '0%';
+                });
+
+                nextBtnFirst.forEach((nextBtnTwo) => {
+                    nextBtnTwo.addEventListener('click', function () {
+                        slidepage.style.marginLeft = '-104%';
+                    });
+                });
+
+                // nextBtnSec.forEach((nextBtnSeconde) => {
+                //     nextBtnSeconde.addEventListener('click', function () {
+                //         slidepage.style.marginLeft = '-208%';
+                //     });
+                // });
+
+                prevBtn.addEventListener('click', function () {
+                    slidepage.style.marginLeft = '0%';
+                });
+
+                // prevBtnFirst.addEventListener('click', function () {
+                //     slidepage.style.marginLeft = '-104%';
+                // });
+            }
+
+            function menuActive() {
+                    var elements = document.getElementsByClassName("menu-active");
+                    for (var i = 0; i < elements.length; i++) {
+                        elements[i].onclick = function () {
+
+                            // remove class from sibling
+
+                            var el = elements[0];
+                            while (el) {
+                                if (el.tagName === "DIV") {
+                                    //remove class
+                                    el.classList.remove("steps-active");
+
+                                }
+                                // pass to the new sibling
+                                el = el.nextSibling;
+                            }
+                            this.classList.add("steps-active");
+                        };
+                    }
+                }
+
+                slide();
+                    menuActive();
+    </script>
     </body>
     
     </html>

@@ -1,0 +1,39 @@
+.navbar__container{
+    width: 100%;
+    min-height: 8rem;
+    background-color: $color-blue !important;
+
+
+    .mynav{
+        height: 100%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        
+        
+        .logo{
+            list-style:none;
+            font-size: 3rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: $color-white;
+        }
+
+
+
+        ul li{
+            list-style:none;
+           margin-left: 1rem;
+        }
+
+        ul li a{
+            list-style:none;
+            font-size: 2rem;
+            text-decoration: none;
+            color: $color-white !important;
+        }
+    }
+
+}

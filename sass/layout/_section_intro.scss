@@ -1,0 +1,58 @@
+.section__intro{
+    width: 100%;
+    min-height: 50rem;
+    padding: 8rem 2rem;
+    background-color:  #67036210 ;
+
+    .description__card{
+        padding: 3rem 2rem;
+        height: 40rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+        span{
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #ed5830;
+        }
+        h2{
+            font-size: 4rem;
+       }
+
+       P{
+        font-size: 1.5rem;}
+        margin-bottom: 2rem;
+
+        .mybutton{
+            font-size: 1.5rem;
+            height: 5rem;
+            width: 13rem;
+            background-color:white;
+            color:#670362 ;
+            font-weight: 900;
+            border: 1px solid #670362 ;
+            border-radius: 50px;
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .illustration__card{
+        width: 100%;
+        height: 40rem;
+
+        @include responsive ( phoneSmall){
+           .img{
+                margin-top: 6rem;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+
+            }
+         }
+    }
+}

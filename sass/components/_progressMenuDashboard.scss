@@ -3,11 +3,15 @@
 
    &__steps{
        height: 30rem;
-       width: 50rem;
+       width: 30rem;
        border: 1px solid #ccc;
        background-color: $color-white;
        padding: 2rem;
        margin-right: 2rem;
+
+       @include responsive(tab-landL){
+           display: none;
+       }
 
        &__item{
         display: flex;
@@ -42,13 +46,34 @@
    } 
 
    &__content{
-       padding: 2rem 1rem;
-       height: 30rem;
+       padding: 2rem;
+       display: flex;
+       width: 55rem;
        overflow: hidden;
+       
+       @include responsive(tab-portXs){
+           width: 50rem;
+       }
+
+       @include responsive(tab-portS){
+           display: block;
+           overflow: visible;
+           width: 40rem;
+       }
+
+       @include responsive(phoneL){
+           width: 100%;
+       }
+
+     
 
        &__steps{
-        margin-bottom: 10rem;
-        transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            margin-right: 3rem;
+
+            @include responsive(tab-portS){
+                margin-bottom: 5rem;
+            }
 
             p{
                 font-size: 1.3rem;
@@ -62,12 +87,28 @@
 
             &__key{
                 background-color: $color-white;
-                width: 50%;
+                width: 50rem;
                 padding: 2rem;
                 border-radius: 1rem;
                 cursor: pointer;
                 display: flex;
                 justify-content: space-between;
+
+                @include responsive(tab-portXs){
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: none;
+                    width: 45rem;
+                }
+
+                @include responsive(tab-portS){
+                    width: 33rem;
+                }
+
+                @include responsive(phoneL){
+                    width: 100%;
+                    overflow: scroll;
+                }
 
                 &__info{
                     p{
@@ -86,11 +127,13 @@
 
                 &__copy{
                     font-size: 1.3rem;
+                    display: inline-block;
+                    margin-top: 2rem;
                     transition: all .3s;
 
                     &:hover{
                         color: $color-blue;
-                        transform: scale(1.1);
+                        transform: scale(1.05);
                     }
                 }
             }
@@ -98,7 +141,14 @@
     }    
 
    .steps-active{
-       background-color: $color-blue !important;
+       
+        .progressMenu__steps__item__icon{
+            background-color: $color-blue !important;
+        }
+
+        span{
+            color: black;
+        }
    }
 
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanBots | ParamCompte</title>
+    <!-- My styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="admin">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar__menu">
+            <li class="sidebar__menu__item">
+                <a data-toggle="tab" href="accueilAdmin.html" class="sidebar__menu__link">
+                    <div class="sidebar__icon">
+                        <img src="../images/browser.png" alt="browser">
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__menu__item">
+                <a data-toggle="tab" href="configuration.html" class="sidebar__menu__link">
+                    <div class="sidebar__icon">
+                        <img src="../images/system.png" alt="system">
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__menu__item sidebar__menu__item--active">
+                <a data-toggle="tab" href="parametreCompte.html" class="sidebar__menu__link">
+                    <div class="sidebar__icon">
+                        <img src="../images/settings.png" alt="setting">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Fin Sidebar -->
+
+    <!-- debut page content -->
+    <div class="page__content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Parametre Profil -->
+                <div class="col-6">
+                    <div class="profil__parameter">
+                        <h4 class="profil__parameter__title">Modifier Votre Profil</h4>
+                        <!-- form Modification -->
+                        <form action="#" class="profil__parameter__form">
+                            <!-- information personnelle  -->
+                            <div class="profil__parameter__form__info">
+                                <div class="profil__parameter__form__inputs">
+                                    <label for="nameEts">Nom de l'entreprise</label>
+                                    <input type="text" id="nameEts">
+                                </div>
+                                <div class="profil__parameter__form__inputs">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email">
+                                </div>
+                                <div class="profil__parameter__form__inputs">
+                                    <label for="lienSite">Lien du site</label>
+                                    <input type="text" id="lienSite">
+                                </div>
+                                <div class="profil__parameter__form__inputs">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="number" id="phone">
+                                </div>
+                                <div class="profil__parameter__form__inputs">
+                                    <label for="newPassword">Nouveau mot de passe</label>
+                                    <input type="password" id="newPassword">
+                                </div>
+                                <div class="profil__parameter__form__inputs">
+                                    <label for="confirmNewPassword">Confirmation mot de passe</label>
+                                    <input type="password" id="confirmNewPassword">
+                                </div>
+                            </div>
+                            <!-- fin information personnelle -->
+                            <!-- logo entreprise -->
+                            <div class="profil__parameter__form__logo">
+                                <div class="profil__parameter__form__logo__illustration">
+                                    <img src="../images/camera.png" alt="camera">
+                                </div>
+                                <label for="file" class="label-file">Choisir une image</label>
+                                <input id="file" class="input-file" type="file">
+                            </div>
+                            <!-- Fin Logo Ets -->
+                        </form>
+                        <!-- Fin form Modification -->
+                    </div>
+                </div>
+                <!-- Fin Parametre Profil -->
+                <!-- Debut Parametre D'affichage -->
+                <div class="col-6">
+                    <div class="view__paramater">
+                        <h4>Parametre d'affichage</h4>
+                        
+                    </div>
+                </div>
+                <!-- Fin Parametre D'affichage -->
+            </div>
+        </div>
+    </div>
+    <!-- fin page content -->
+</body>
+</html>

@@ -61,6 +61,10 @@
         cursor: pointer;
         transition: ease .3s;
 
+        @include responsive(tab-portS){
+            display: none;
+        }
+
         &:hover{
             background-color: $color-blue;
             color: $color-white;

@@ -1,0 +1,90 @@
+.profil__parameter{
+    padding: 2rem;
+    min-height: 30rem;
+    background-color: $color-white;
+    border-radius: 2rem;
+
+    &__title{
+        font-size: 2.3rem;
+        color: $color-blue;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__form{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        &__info{
+            width: 50%;
+        }
+
+        &__inputs{
+            border: 1px solid #ccc;
+            width: 100%;
+            padding: .5rem 1rem;
+            border-left: 5px solid $color-blue;
+            border-bottom: 2px solid $color-blue;
+             border-radius: 1rem;
+             margin-bottom: 2rem;
+            
+
+            label{
+                display: block;
+                margin-bottom: .5rem;
+                font-size: 1.6rem;
+                color: $color-bg;
+            }
+
+            input{
+                border: none;
+                font-size: 1.5rem;
+                width: 100%;
+                background-color: $color-white;
+            }
+        }
+
+        &__logo{
+            
+            &__illustration{
+                height: 7rem;
+                width: 7rem;
+                border-radius: 1rem;
+                border: 1px solid #ccc;
+                margin-bottom: 1rem;
+                margin: 1rem auto;
+                text-align: center;
+                background-color: $color-bg;
+
+                img{
+                    width: 80%;
+                    height: 100%;
+                    object-fit: contain;
+                    border-radius: 1rem;
+                }
+            }
+
+            .label-file {
+                cursor: pointer;
+                color: $color-blue;
+                font-weight: bold;
+                border: 1px solid $color-blue;
+                padding: 1rem 2rem;
+                border-radius: 1rem;
+                transition: ease-in-out .3s;
+            }
+            .label-file:hover {
+                color: $color-white;
+                background-color: $color-blue;
+            }
+
+            .input-file {
+                display: none;
+            }
+        }
+    }
+
+
+}
+

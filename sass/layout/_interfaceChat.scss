@@ -1,12 +1,25 @@
+.chatBot__container{
+    min-height: 50rem;
+    position: fixed;
+    right: 5%;
+    bottom: 20%;   
+}
+
 .interface__chat{
+    z-index: 12;
     height: 50rem;
     width: 38rem;
-    position: absolute;
+    background-color: $color-white;
+    position: fixed;
     right: 5%;
     bottom: 20%;
     border-radius: 1rem;
     box-shadow: 10px -18px 113px -69px rgba(0,0,0,0.75);
     visibility: hidden;
+
+    @include responsive(tab-land){
+        height: 40rem;
+    }
 
     @include responsive(phone){
         width: 30rem;
@@ -108,7 +121,7 @@
             float: right;
             
             &__contenu{
-
+                margin-bottom: 1rem;
                 .message{
                     background-color: $color-blue;
                     padding: 1rem;
@@ -122,6 +135,7 @@
                 &--time{
                     clear: both;
                     display: block;
+                    text-align: right;
                 }
             }
 
@@ -145,6 +159,7 @@
     &__foot{
         box-shadow: $box-shadow;
         border-radius: 0 0 1rem 1rem;
+        background-color: $color-white;
         
         .form__chat{
             display: flex;
@@ -204,6 +219,10 @@
     bottom: 15%;
     transition: all .3s ease;
 
+    @include responsive(tab-land){
+        bottom: 30%;
+    }
+
     @include responsive(phone){
         bottom: 30%;
     }
@@ -212,4 +231,5 @@
         bottom: 33%;
     }
 }
+
 

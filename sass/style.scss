@@ -1,20 +1,33 @@
-// abstracts
+// Abstracts
 @import 'abstracts/mixin';
-@import 'abstracts/variables'; 
+@import 'abstracts/mixinDashboard';
+@import 'abstracts/variable';
 
-// Base
-@import 'base/reset';
-@import 'base/_typography.scss';
+// base 
+@import 'bases/reset';
+@import 'bases/typography';
 
-// Layouts
-@import 'layouts/interfaceChat';
-@import 'layouts/pageContent';
-@import 'layouts/graphic';
-@import 'layouts/historique';
+// layouts
+@import 'layout/apropo';
+@import 'layout/navbar';
+@import 'layout/section_cards';
+@import 'layout/section_intro';
+@import 'layout/section_publ';
+@import 'layout/footer';
+@import 'layout/interfaceChat';
+@import 'layout/pageContentAdmin';
+@import 'layout/graphicDashboard';
+@import 'layout/historiqueDashboard';
+@import 'layout/profilParameter';
 
 // components
+@import 'components/cardD';
+@import 'components/icone';
+@import 'components/input_button';
+@import 'components/modalform';
 @import 'components/buttons';
+@import 'components/allConversationDashboard';
+@import 'components/cardsDashboard';
+@import 'components/progressMenuDashboard';
 @import 'components/sidebar';
-@import 'components/cards';
-@import 'components/allConversation';
-@import 'components/progressMenu';
+

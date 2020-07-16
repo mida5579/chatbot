@@ -1,0 +1,43 @@
+.section__publ{
+    width: 100%;
+    min-height: 20rem;
+    padding-left: 1.5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    
+
+    h3{
+        font-size: 4.5rem;
+        color: #333;
+       text-shadow: -5px -5px 1px rgba(141, 53, 146, 0.125);
+       margin-bottom: 3rem;
+    }
+
+    .agenda{
+        width: 100%;
+        height: 18rem;
+        text-align: center;
+        padding: 3rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.303);
+        border-radius: 20px;
+        box-shadow:-1px 8px 22px -3px rgba(0,0,0,0.27);
+        transition: .2s ease-in-out;
+        margin-top: 2rem;
+
+        p{
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        &:hover{
+            box-shadow: none;
+            border: 1px solid rgba(0, 0, 0, 0.228);
+            
+        }
+    }
+}
+

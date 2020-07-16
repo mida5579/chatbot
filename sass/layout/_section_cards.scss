@@ -1,0 +1,19 @@
+.section__cards{
+    width: 100%;
+    min-height: 50rem;
+    padding: 3rem;
+    
+
+    &__h2{
+        font-size: 3.5rem;
+        margin-bottom:1rem;
+        color:  #670362;
+    }
+
+    &__p{
+        font-size: 1.5rem;
+        margin-bottom:1rem;
+    }
+    
+    
+}

@@ -1,7 +1,4 @@
 
-
-
-
 // Faire Afficher l'historique de la conversation au clic 
 var converstaion = document.querySelectorAll("#conversation");
 var allConversation = document.getElementById("allConversation");
@@ -41,37 +38,12 @@ function graphic(){
     });
 }
 
-function slide() {
-    const slidepage = document.querySelector('.slide');
-    const nextBtn = document.querySelector('.next-0');
-    const nextBtnFirst = document.querySelectorAll('.next-1');
-    const nextBtnSec = document.querySelectorAll('.next-2');
-    var activeColor = document.querySelector('#active');
+modals();
+graphic();
 
-    nextBtn.addEventListener('click', function () {
-        slidepage.style.marginTop = '0%';
-    });
 
-    nextBtnFirst.forEach((nextBtnTwo) => {
-        nextBtnTwo.addEventListener('click', function () {
-            slidepage.style.marginTop = '-32%';
-        });
-    });
 
-    nextBtnSec.forEach((nextBtnSeconde) => {
-        nextBtnSeconde.addEventListener('click', function () {
-            slidepage.style.marginTop = '-64%';
-        });
-    });
 
-}
-
-if (window.location.pathname == "/public/pages/accueilAdmin.html"){
-    modals();
-    graphic();
-}else{
-    slide();
-}
 
 
 
