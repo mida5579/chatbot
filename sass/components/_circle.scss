@@ -12,8 +12,8 @@
     }
 
      .yellow{
-        height: 6rem;
-        width: 6rem;
+        height: 3rem;
+        width: 3rem;
         border-radius: 50%;
         background-color: yellow;
         cursor: pointer;
@@ -22,8 +22,8 @@
     }
 
      .green{
-        height: 6rem;
-        width: 6rem;
+         height: 3rem;
+        width: 3rem;
         border-radius: 50%;
         background-color: green;
         cursor: pointer;
@@ -32,8 +32,8 @@
     }
 
      .purple{
-        height: 6rem;
-        width: 6rem;
+        height: 3rem;
+        width: 3rem;
         border-radius: 50%;
         background-color: purple;
         cursor: pointer;
@@ -42,8 +42,8 @@
     }
 
      .gray{
-        height: 6rem;
-        width: 6rem;
+        height: 3rem;
+        width: 3rem;
         border-radius: 50%;
         background-color: gray;
         cursor: pointer;
@@ -52,8 +52,8 @@
     }
 
       .black{
-        height: 6rem;
-        width: 6rem;
+        height: 3rem;
+        width: 3rem;
         border-radius: 50%;
         background-color: black;
         cursor: pointer;
@@ -65,47 +65,77 @@
 .rounded-icon{
     display: flex;
 
-   .sms1{
-        height: 4rem;
-        width: 4rem;
+    .sms1{
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
-        background-color:rgb(240, 240, 130);
-        
+        background-color:black;
+         margin-left: 1rem;
+
+        img{
+            height:3rem;
+            margin-top: 1rem;
+        } 
    }
 
-    .sms2{
-        height: 4rem;
-        width: 4rem;
+   .sms2{
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
-        background-color: rgb(240, 240, 130);
-        margin-left: 1rem;
+        background-color:black;
+         margin-left: 1rem;
+
+        img{
+            height:3rem;
+            margin-top: 1rem;
+        } 
    }
 
     .sms3{
-        height: 4rem;
-        width: 4rem;
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
-        background-color:rgb(240, 240, 130);
+        background-color:black;
         margin-left: 1rem;
+
+          img{
+            height:3rem;
+            margin-top: 1rem;
+        } 
    }
 
-   i{
-       margin-top: 1rem;
-       color: white;
-       cursor: pointer;
+    .sms4{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color:black;
+        margin-left: 1rem;
+
+          img{
+            height:3rem;
+            margin-top: 1rem;
+        } 
    }
 }
 
 .table-description{
     position: relative;
     .rond{
-        height: 6rem;
-        width: 6rem;
+        min-height: 5rem;
+        width: 5rem;
         border-radius: 50%;
-        background-color: #f0f082;
+        background-color:black;
+        margin: 14rem 25rem;
         position: absolute;
-        /* float: left; */
-        transform: translate(25rem, 12rem);
-        /* margin: 14rem;*/
+
+        @include responsive (tab-landS){
+        min-height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color:black;
+        position: relative;
+        margin: 2rem;
+        float: right;
+        }
     }
 }

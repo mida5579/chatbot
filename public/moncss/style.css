@@ -301,6 +301,7 @@ footer .footer2 {
   height: 3rem;
   width: 20rem;
   padding: 1rem;
+  margin-left: 1rem;
 }
 
 @media only screen and (max-width: 453px) {
@@ -515,8 +516,8 @@ footer .footer2 {
 }
 
 .rounded-circle .yellow {
-  height: 6rem;
-  width: 6rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   background-color: yellow;
   cursor: pointer;
@@ -524,8 +525,8 @@ footer .footer2 {
 }
 
 .rounded-circle .green {
-  height: 6rem;
-  width: 6rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   background-color: green;
   cursor: pointer;
@@ -533,8 +534,8 @@ footer .footer2 {
 }
 
 .rounded-circle .purple {
-  height: 6rem;
-  width: 6rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   background-color: purple;
   cursor: pointer;
@@ -542,8 +543,8 @@ footer .footer2 {
 }
 
 .rounded-circle .gray {
-  height: 6rem;
-  width: 6rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   background-color: gray;
   cursor: pointer;
@@ -551,8 +552,8 @@ footer .footer2 {
 }
 
 .rounded-circle .black {
-  height: 6rem;
-  width: 6rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   background-color: black;
   cursor: pointer;
@@ -566,32 +567,55 @@ footer .footer2 {
 }
 
 .rounded-icon .sms1 {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
-  background-color: #f0f082;
+  background-color: black;
+  margin-left: 1rem;
+}
+
+.rounded-icon .sms1 img {
+  height: 3rem;
+  margin-top: 1rem;
 }
 
 .rounded-icon .sms2 {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
-  background-color: #f0f082;
+  background-color: black;
   margin-left: 1rem;
+}
+
+.rounded-icon .sms2 img {
+  height: 3rem;
+  margin-top: 1rem;
 }
 
 .rounded-icon .sms3 {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
-  background-color: #f0f082;
+  background-color: black;
   margin-left: 1rem;
 }
 
-.rounded-icon i {
+.rounded-icon .sms3 img {
+  height: 3rem;
   margin-top: 1rem;
-  color: white;
-  cursor: pointer;
+}
+
+.rounded-icon .sms4 {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 1rem;
+}
+
+.rounded-icon .sms4 img {
+  height: 3rem;
+  margin-top: 1rem;
 }
 
 .table-description {
@@ -599,15 +623,24 @@ footer .footer2 {
 }
 
 .table-description .rond {
-  height: 6rem;
-  width: 6rem;
+  min-height: 5rem;
+  width: 5rem;
   border-radius: 50%;
-  background-color: #f0f082;
+  background-color: black;
+  margin: 14rem 25rem;
   position: absolute;
-  /* float: left; */
-  -webkit-transform: translate(25rem, 12rem);
-          transform: translate(25rem, 12rem);
-  /* margin: 14rem;*/
+}
+
+@media only screen and (max-width: 991px) {
+  .table-description .rond {
+    min-height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    margin: 2rem;
+    float: right;
+  }
 }
 
 .page__field button {
