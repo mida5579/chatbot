@@ -946,108 +946,19 @@ footer .footer2 {
   margin-bottom: 3rem;
 }
 
-.view__paramater__personnalisation__theme span {
+.view__paramater__personnalisation span {
   font-size: 1.6rem;
   font-weight: bold;
-}
-
-.view__paramater__personnalisation__theme__color {
-  margin: 1rem 0 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.view__paramater__personnalisation__theme__color__bg {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-.view__paramater__personnalisation__theme__color__bg--red {
-  background-color: #d30707;
-}
-
-.view__paramater__personnalisation__theme__color__bg--violet {
-  background-color: #670362;
-}
-
-.view__paramater__personnalisation__theme__color__bg--yellow {
-  background-color: yellow;
-}
-
-.view__paramater__personnalisation__theme__color__bg--green {
-  background-color: green;
-}
-
-.view__paramater__personnalisation__theme__color__bg--grey {
-  background-color: #dbdbe0;
-}
-
-.view__paramater__personnalisation__theme__color__bg--blue {
-  color: blue;
-}
-
-.view__paramater__personnalisation__theme__color__icon {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  background-color: green;
-  margin-right: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-}
-
-.view__paramater__personnalisation__theme__color__icon img {
-  height: 60%;
-  width: 60%;
-}
-
-.view__paramater__personnalisation__theme__message span {
-  font-size: 1.6rem;
-  font-weight: bold;
-  width: 100%;
-}
-
-.view__paramater__personnalisation__theme__message__form {
-  width: 100%;
-}
-
-.view__paramater__personnalisation__theme__message__form textarea {
-  width: 50%;
   display: block;
-  min-height: 10rem;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.view__paramater__personnalisation .textarea {
+  width: 100%;
+  height: 10rem;
+  font-size: 1.6rem;
   padding: 1rem;
-  font-size: 1.4rem;
-}
-
-.view__paramater__personnalisation__theme__message__form__btn {
-  padding: 1rem 2rem;
-  border: 1px solid #670362;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #670362;
-  border-radius: 1rem;
-  cursor: pointer;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.view__paramater__personnalisation__theme__message__form__btn:hover {
-  -webkit-box-shadow: inset 0 0 0 4rem #670362;
-          box-shadow: inset 0 0 0 4rem #670362;
-  color: #fff;
+  margin-bottom: 2rem;
 }
 
 .agent__parameter {
@@ -2397,8 +2308,9 @@ footer .footer2 {
 }
 
 .table-description {
-  width: 35rem;
+  width: 60%;
   height: 20rem;
+  margin-bottom: 2rem;
   -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
           box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
