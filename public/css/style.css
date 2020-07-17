@@ -812,6 +812,13 @@ footer .footer2 {
   background-color: #fff;
 }
 
+.historique__table--admin__icon img {
+  height: 100%;
+  width: 4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .profil__parameter {
   padding: 2rem;
   min-height: 30rem;
