@@ -78,3 +78,179 @@
         width: 30rem;
     }
 }
+
+
+// fconversation card admin
+
+.card__first{
+    width: 100%;
+    max-height:80rem;;
+    overflow: scroll;
+    background-color: $color-white;
+    border-radius: 10px;
+    @include responsive(phoneS){
+        margin-left: 2rem;
+    }
+ 
+    
+
+    .mesChat{
+
+        &__box{
+            display: flex;
+            height:100%;
+            width: 100%;
+            border-left: 2px solid $color-blue;
+            background-color: $color-grey;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            justify-content:flex-start;
+            align-items: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            
+
+            &__item-1{
+                font-size: 3rem;
+                font-weight: 600;
+                color:#ed1717 ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50px;
+                background-color: rgba(85, 126, 85, 0.205);
+            }
+
+            &__item-2{
+                width: 10rem;
+                margin-left:0.5rem ;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    font-size: 1.8rem;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                }
+            
+            }
+            .jour{
+                margin-left:auto;
+                color: green;
+                font-size: 1.8rem;
+            }
+
+        }
+    }
+
+    .tab {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        
+      }
+      
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        height: 6rem;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+      
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+      
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #ccc;
+      }
+      
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+
+        &:not(:last-child){
+            display: block;
+        }
+      }
+}
+
+.second__part{
+    // width: 100%;
+    // max-height: 80rem;
+    // overflow: scroll;
+    // background-color: $color-white;
+    // border-radius: 10px;
+
+    //
+
+    #contenu_chat{
+        height:65rem;
+        position: relative;
+        width: 100%;
+        border: 1px solid $color-blue;
+        border-radius: 10px;
+        overflow: scroll;
+        display: none;
+        padding: 2rem;
+        background-color: $color-white;
+        @include responsive(tab-portS ){
+            margin-top: 2rem;
+        }
+        
+            @include responsive(phoneS){
+                 margin-left: 4rem;
+         }
+        
+            @include responsive(tab-port){
+                margin-top: 2rem;
+            }
+
+    .admin__chat {
+        width: 100%;
+        min-height: 6rem;
+        top:80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5rem;
+        border-radius: 10px;
+        background-color: $color-white;
+        box-shadow: $box-shadow;
+
+
+        // .textarea{
+        //     width: 80%;
+        //     height: 100%;
+        //     font-size: 1.8rem;
+        //     border: none;
+        //     padding: 1rem;
+        //     border-radius: 10px;
+            
+        // }
+
+    }
+
+        
+   
+
+       
+    }
+    
+}

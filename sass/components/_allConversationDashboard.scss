@@ -92,3 +92,67 @@
 .conversationView{
     display: block;
 }
+
+
+
+
+/************* Conversation ****************/
+.contenu_chat{
+    background-size:contain;
+    background-repeat: no-repeat;
+
+    &__date{
+        min-height: 3.5rem;
+        width: 20%;
+        border-radius: 20px;
+        border: 2px solid $color-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    
+        span{
+            font-size: 2rem;
+            color: #670362;
+        };
+    }
+    
+    &__visiteur{
+
+        p{
+            background-color: #1481ac;
+            width: 15rem;
+            min-height: 1rem;
+            color: $color-white;
+            font-size: 1.8rem;
+            padding: 1rem;
+            text-align: start;
+            border-bottom-left-radius: 20px;
+        }
+    }
+
+    &__admin{
+        width: 15rem;
+        min-height: 1rem;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        p{
+            width: 15rem;
+            min-height: 1rem;
+            background-color:$color-bg;
+            color: #444;
+            font-size: 1.8rem;
+            padding: 1rem;
+            text-align: start;
+            border-bottom-left-radius: 20px;
+            float: right ;
+        }
+
+        .admin-jour{
+            float: right;
+            margin-bottom: 1rem;
+        }
+
+    }
+}

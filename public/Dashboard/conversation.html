@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBot conversation</title>
+
+    <!-- My styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+
+    </style>
+</head>
+<body class="admin">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- logo -->
+        <a href="accueilAdmin.html">
+            <div class="sidebar__logo">
+                <img src="../images/logo-nan.png" alt="logo">
+            </div>
+        </a>
+        <!-- fin logo -->
+        <!-- Menu SideBar -->
+        <ul class="sidebar__menu">
+            <li class="sidebar__menu__item">
+                <a data-toggle="tab" href="accueilAdmin.html" class="sidebar__menu__link">
+                    <div class="sidebar__icon">
+                        <img src="../images/browser.png" alt="browser">
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__menu__item sidebar__menu__item--active">
+                <a data-toggle="tab" href="conversation.html" class="sidebar__menu__link">
+                    <div class="sidebar__icon">
+                        <img src="../images/speech-bubble.png" alt="setting">
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__menu__item">
+                <a data-toggle="tab" href="configuration.html" class="sidebar__menu__link">
+                    <div class="sidebar__icon">
+                        <img src="../images/system.png" alt="system">
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__menu__item">
+                <a data-toggle="tab" href="parametreCompte.html" class="sidebar__menu__link">
+                    <div class="sidebar__icon">
+                        <img src="../images/settings.png" alt="setting">
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <!--Fin Menu SideBar -->
+        <!-- Button deconnexion -->
+        <a href="../index.html">
+            <div class="sidebar__deconnexion">
+                <img src="../images/logout.png" alt="logout">
+            </div>
+        </a>
+        <!-- fin button deconnexion -->
+    </div>
+
+    <!-- bar de recherche -->
+    <div class="container-fluid">
+        <div class="recharche">
+            <form action="" class="search_part">
+                <input type="search" name="searchs " class="form_recherche" id="rech">
+                <label for="rech" class="label__button">recherche</label>
+            </form>
+        </div>
+    </div>
+  
+    <!-- page content -->
+    <div class="page__content">
+        <!-- liste des message -->
+        <div class="row">
+           <div class="col-sm-12 col-md-6 col-lg-6">
+               <div class="card__first">
+                  <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'mes_chat')">Mes chats</button>
+                    <button class="tablinks" onclick="openCity(event, 'tout_chat')">Tous les chats</button>
+                  </div>
+                  
+                  <div id="mes_chat" class="tabcontent mesChat">
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                        <div class="mesChat__box d-flex">
+                            <div class="mesChat__box__item-1"> V </div>
+                            <div class="mesChat__box__item-2">
+                                <span>visiteur</span>
+                                <p>vous :salut</p>
+                            </div>
+                            <span class="jour">il ya 1m</span>
+                        </div>
+                  </div>
+
+            <!-- contenu chat-->
+                  <div id="tout_chat" class="tabcontent mesChat">
+                    <div class="mesChat__box d-flex">
+                        <div class="mesChat__box__item-1"> V </div>
+                        <div class="mesChat__box__item-2">
+                            <span> ALL chat</span>
+                            <p>vous :bonjour</p>
+                        </div>
+                        <span class="jour">il ya 1m</span>
+                    </div>
+                </div>
+               </div>
+           </div>
+           <!-- conversation -->
+           <div class=" col-sm-12 col-md-6 col-lg-6">
+                <div class="second__part">
+                    <div id="contenu_chat" class="contenu_chat">
+                        <div class="contenu_chat__date"> <span>hier</span></div>
+                        
+                        <div class="contenu_chat__visiteur">
+                            <span class="jour">il ya 2m</span>
+                            <p class="contenu_chat__visiteur__msg">on s'ocuppe de vous.</p>
+                        </div>
+
+                        <!-- admin chat-->
+                        <div class="contenu_chat__admin">
+                            <span class="admin-jour">il ya 3m</span>
+                            <p class="contenu_chat__admin__msg">salut</p>
+                        </div>
+                        <div class="espace_ecrire">
+                            <form action="#" class="form" >
+                                <textarea name="" id="" cols="20" placeholder="ecrire" class="textarea"></textarea>
+                                <button type="submit" class=" btn_submit text-center">
+                                    <i class="fa fa-send"></i>
+                                </button>
+                                <!-- <input type="submit" value="envoyer" class="input_button"> --> 
+                            </form>
+                        </div>
+                            <!-- <div class="visit_notification"> V<span class="jour">il ya 1m</span></div> -->
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <!-- End Statistic -->
+    </div>
+    <!-- End page content -->
+
+    <!-- My scripts -->
+  
+    <link rel="stylesheet" href="../js/jquery.min.js">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/mesChat.js"></script>
+    <script src="../js/toutChat.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+// .search_part{
+//     width: 100%;
+//     height: auto;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .form_recherche{
+//     width: 30rem;
+//     height: 4rem;
+//     padding: 1rem;  
+//     border: none;
+//     border-radius: 10rem;
+// }
+
+// label{
+//     height: 4rem;
+//     width: 10rem;
+//     background: red;
+//     border-radius: 20px;
+//     background-color: $color-blue;
+//     color: $color-white;
+//     margin-left: -6rem;
+//     padding: 1rem;
+    
+    
+// }
+
+.recharche{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f0f5;
+
+    @include responsive(tab-portS ){
+        margin-left: 4rem;
+    
+    }
+
+    @include responsive(phoneS){
+        margin-left: 8rem;
+    
+    }
+
+    @include responsive(phonebs){
+        margin-left: 6rem;
+        width: 100%;
+        padding: 2rem;
+        height: 11rem;
+        text-align: center;
+    
+    }
+
+
+    .form_recherche{
+        height: 4rem;
+        width: 35rem;
+        border: none;
+        border-radius: 20px;
+        padding: 1rem;
+        font-size: 1.5rem;
+
+        @include responsive(phoneXb){
+            width: 24rem;
+        
+        }
+        
+    }
+    
+}

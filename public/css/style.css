@@ -1686,6 +1686,75 @@ footer .footer2 {
   display: block;
 }
 
+/************* Conversation ****************/
+.contenu_chat {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contenu_chat__date {
+  min-height: 3.5rem;
+  width: 20%;
+  border-radius: 20px;
+  border: 2px solid #f3f8fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.contenu_chat__date span {
+  font-size: 2rem;
+  color: #670362;
+}
+
+.contenu_chat__visiteur p {
+  background-color: #1481ac;
+  width: 15rem;
+  min-height: 1rem;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem;
+  text-align: start;
+  border-bottom-left-radius: 20px;
+}
+
+.contenu_chat__admin {
+  width: 15rem;
+  min-height: 1rem;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenu_chat__admin p {
+  width: 15rem;
+  min-height: 1rem;
+  background-color: #dbdbe0;
+  color: #444;
+  font-size: 1.8rem;
+  padding: 1rem;
+  text-align: start;
+  border-bottom-left-radius: 20px;
+  float: right;
+}
+
+.contenu_chat__admin .admin-jour {
+  float: right;
+  margin-bottom: 1rem;
+}
+
 .card__stats {
   min-height: 5rem;
   border: 1px solid #ccc;
@@ -2485,5 +2554,292 @@ footer .footer2 {
   .Ncard-form {
     width: 30rem;
   }
+}
+
+.card__first {
+  width: 100%;
+  max-height: 80rem;
+  overflow: scroll;
+  background-color: #fff;
+  border-radius: 10px;
+  /* Style the buttons inside the tab */
+  /* Change background color of buttons on hover */
+  /* Create an active/current tablink class */
+  /* Style the tab content */
+}
+
+@media only screen and (max-width: 320px) {
+  .card__first {
+    margin-left: 2rem;
+  }
+}
+
+.card__first .mesChat__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #670362;
+  background-color: #f3f8fa;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.card__first .mesChat__box__item-1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ed1717;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50px;
+  background-color: rgba(85, 126, 85, 0.205);
+}
+
+.card__first .mesChat__box__item-2 {
+  width: 10rem;
+  margin-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__first .mesChat__box__item-2 span {
+  font-size: 1.8rem;
+}
+
+.card__first .mesChat__box__item-2 p {
+  font-size: 1.5rem;
+}
+
+.card__first .mesChat__box .jour {
+  margin-left: auto;
+  color: green;
+  font-size: 1.8rem;
+}
+
+.card__first .tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.card__first .tab button {
+  background-color: inherit;
+  height: 6rem;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.card__first .tab button:hover {
+  background-color: #ddd;
+}
+
+.card__first .tab button.active {
+  background-color: #ccc;
+}
+
+.card__first .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.card__first .tabcontent:not(:last-child) {
+  display: block;
+}
+
+.second__part #contenu_chat {
+  height: 65rem;
+  position: relative;
+  width: 100%;
+  border: 1px solid #670362;
+  border-radius: 10px;
+  overflow: scroll;
+  display: none;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .second__part #contenu_chat {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .second__part #contenu_chat {
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .second__part #contenu_chat {
+    margin-top: 2rem;
+  }
+}
+
+.second__part #contenu_chat .admin__chat {
+  width: 100%;
+  min-height: 6rem;
+  top: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+}
+
+.espace_ecrire {
+  width: 100%;
+  height: 7rem;
+  position: relative;
+  top: 69%;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  border-bottom: none;
+  padding: 1rem;
+}
+
+.form .textarea {
+  height: 100%;
+  width: 88%;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  border: none;
+  z-index: 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.form .btn_submit {
+  width: auto;
+  height: 6rem;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 2%;
+  top: 20%;
+  font-size: 4rem;
+  color: #670362;
+}
+
+.form .btn_submit:focus {
+  outline: none;
+}
+
+.conversation__first {
+  width: 100%;
+  height: 70rem;
+  overflow: scroll;
+  background-color: #fff;
+}
+
+.recharche {
+  width: 100%;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f0f5;
+}
+
+@media only screen and (max-width: 600px) {
+  .recharche {
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .recharche {
+    margin-left: 8rem;
+  }
+}
+
+.recharche .form_recherche {
+  height: 4rem;
+  width: 35rem;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.label__button {
+  width: 10rem;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #670362;
+  color: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-left: 2rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.label__button:hover {
+  -webkit-box-shadow: inset 0 -4.25rem 0 0 #fff;
+          box-shadow: inset 0 -4.25rem 0 0 #fff;
+  color: #670362;
+  border: 1px solid #670362;
 }
 /*# sourceMappingURL=style.css.map */
