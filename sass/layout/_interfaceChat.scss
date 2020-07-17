@@ -220,11 +220,11 @@
     transition: all .3s ease;
 
     @include responsive(tab-land){
-        bottom: 30%;
+        bottom: 18%;
     }
 
     @include responsive(phone){
-        bottom: 30%;
+        bottom: 25%;
     }
 
     @include responsive(phoneS){

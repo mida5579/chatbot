@@ -649,13 +649,13 @@ footer .footer2 {
 
 @media only screen and (max-width: 1400px) {
   .chatBlocView {
-    bottom: 30%;
+    bottom: 18%;
   }
 }
 
 @media only screen and (max-width: 414px) {
   .chatBlocView {
-    bottom: 30%;
+    bottom: 25%;
   }
 }
 
