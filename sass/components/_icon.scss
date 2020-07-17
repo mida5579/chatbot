@@ -1,0 +1,31 @@
+//icone dans le footer
+   
+.inline-icon{
+        display: flex;
+        float: right;
+        .icon{        
+        width: 3rem;
+        height: 3rem;
+        background: white;
+        text-align: center;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        margin-left: 1rem;
+        transition: all .3s ease-in-out;
+    
+        &:hover{
+            background: $color-violet;
+            color: white;
+        }
+            a{
+                .fa{
+            margin-top: .5rem;
+            }
+
+             &:hover{
+                color: white;
+            }
+        }
+    
+    }
+}

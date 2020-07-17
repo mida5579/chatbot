@@ -3,6 +3,10 @@
         @media only screen and (max-width: 414px){ @content };
     }
 
+     @if $breakpoint == phoneSmall{
+        @media only screen and (max-width:453px) {@content};
+    }
+
     @if $breakpoint == phoneL {
         @media only screen and (max-width: 500px){ @content };
     }
@@ -21,6 +25,10 @@
 
     @if $breakpoint == tab-portS {
         @media only screen and (max-width: 600px){ @content };
+    }
+
+     @if $breakpoint == phoneN{
+        @media only screen and (max-width:770px) {@content};
     }
 
 

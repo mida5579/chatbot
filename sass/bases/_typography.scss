@@ -43,6 +43,53 @@ a,a:hover{
     }
 }
 
+//parametres
+
+
+ .page{
+
+    &__title{
+        h5{
+          font-size: 2rem; 
+          font-weight: bold; 
+          color: $color-violet;
+          line-height: 2rem;
+        }    
+        span{
+            font-size: 1.4rem; 
+            color: $color-text; 
+        }    
+        
+        p{
+            font-size: 1.5rem; 
+            color: $color-text; 
+        }
+    }
+}
+
+
+//inscription
+
+
+    .inscrip{
+       h4{
+            font-size: 2rem; 
+          font-weight: bold; 
+          color: $color-violet;
+          line-height: 2rem;
+          margin-top: 2rem;
+       }
+    }
+//connexion
+  .connex{
+       h4{
+            font-size: 2rem; 
+          font-weight: bold; 
+          color: $color-violet;
+          line-height: 2rem;
+          margin-top: 2rem;
+       }
+    }
 
 //footer
 .row-foot{

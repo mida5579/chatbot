@@ -45,7 +45,7 @@
         width: 100%;
         height: 40rem;
 
-        @include responsive ( phoneSmall){
+        @include responsive(phoneSmall){
            .img{
                 margin-top: 6rem;
                 width: 100%;

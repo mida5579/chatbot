@@ -13,7 +13,7 @@
     border-bottom-right-radius: 2rem;
     margin-bottom: 2rem;
 
-        @include responsive ( tab-landS){
+        @include responsive(tab-landL){
             padding: 1rem;
             height: 28rem;
         }
@@ -22,13 +22,12 @@
 
 
 .table-description{
-    width: 60%;
+    width: 35rem;
     height: 20rem;
-    margin-bottom: 2rem;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
 
-    @include responsive (tab-landS){
+    @include responsive (tab-landL){
         width: 25rem;
         margin-left: 2rem;
         height: 7rem;
@@ -71,11 +70,11 @@
      box-shadow: $box-shadow;
     border-radius: $border-radius;
 
-    @include responsive ( phoneS){
+    @include responsive(phoneXL){
         width: 40rem;
     }
 
-    @include responsive ( phoneSmall){
+    @include responsive(phoneSmall){
         width: 30rem;
     }
 }

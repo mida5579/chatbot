@@ -7,9 +7,9 @@
     overflow: hidden;
     padding: 5rem;
 
-      @include responsive (phoneSmall){
-            padding: 3rem;
-        }
+    @include responsive (phoneSmall){
+        padding: 3rem;
+    }
 
     &__img{
         height: 5rem;
@@ -70,14 +70,17 @@
 
     .row-color{
 
-    #message{
-    width: 98%;
-    margin-top: 1rem;
-    font-size: 1.6rem;
-    padding: 1rem;
-
+        #message{
+        width: 98%;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        padding: 1rem;
+        border: 1px solid lightgrey;
         }
     }
+
+
+
 }
 
 .user-admin{
@@ -86,7 +89,7 @@
     justify-content: center;
     margin-top: 2rem;
 
-      @include responsive ( phoneSmall){
+      @include responsive(phoneSmall){
             display:block;
             margin-bottom: 2rem;
         }
@@ -127,7 +130,7 @@
     }
 
 
-        @include responsive ( phoneSmall){
+        @include responsive(phoneSmall){
              margin-left: 4rem;
         }
 
@@ -135,23 +138,26 @@
 
 
     .user-input{
-    height: 3rem;
-    width: 20rem;
-    padding: 1rem;
-    margin-left: 1rem;
+        height: 3rem;
+        width: 20rem;
+        padding: 1rem;
+        margin-left: 1rem;
+        border: 1px solid lightgrey;
 
-        @include responsive ( phoneSmall){
+        @include responsive(phoneSmall){
             margin-bottom: 2rem;
+            margin-left: 0;
         }
     }
 
     .user-input1{
-    height: 3rem;
-    width: 20rem;
-    margin-left: 1rem;
-    padding: 1rem;
+        height: 3rem;
+        width: 20rem;
+        margin-left: 1rem;
+        padding: 1rem;
+         border: 1px solid lightgrey;
 
-        @include responsive ( phoneSmall){
+        @include responsive(phoneSmall){
             margin-left: 0;
         }
     }
@@ -200,7 +206,7 @@
     border-right: none;
     border-bottom: 1px solid #ccc;
 
-        @include responsive ( phoneSmall){
+        @include responsive (phoneSmall){
             width: 20rem;
             }
         }

@@ -78,9 +78,7 @@
 
 
 
-
-
-    // Page fiel
+// page field
 .page__field{
     button{
         width: 15rem;
@@ -115,7 +113,7 @@
 
 }
 
-// addMore
+
 .addmore{
     padding: 1rem;
     border: none;
@@ -134,12 +132,11 @@
         border: 3px solid $color-violet;
     }
 
-       @include responsive ( phoneSmall){
+       @include responsive(phoneSmall){
             margin-top: 6rem;
         }
 }
 
-// copy Code
 .copycode{
      padding: .6rem;
     border: none;
@@ -148,7 +145,7 @@
     background-color: $color-white;
 }
 
-// btn inscription
+// button inscription
 .btn-inscrip{
       button{
         padding: .6rem 3rem;
@@ -169,7 +166,7 @@
     }
 }
 
-// btn connexion
+// bouton connexion
 .btn-connex{
     button{
         padding: .6rem 3rem;
